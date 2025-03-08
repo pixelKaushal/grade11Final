@@ -1,0 +1,230 @@
+<html>
+<head> 
+  <title> Boolean </title>
+  <link rel="stylesheet" href="index.css" />  
+</head>
+<body>
+<div id="main">
+  <div id="TOC">
+    <h2>Topics</h2>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#number-system">Number System</a></li>
+      <li><a href="#binary-addition">Binary Addition</a></li>
+      <li><a href="#binary-decimal">Binary to Decimal Conversion</a></li>
+      <li><a href="#decimal-binary">Decimal to Binary Conversion</a></li>
+      <li><a href="#binary-octal">Binary to Octal Conversion</a></li>
+      <li><a href="#octal-binary">Octal to Binary Conversion</a></li>
+      <li><a href="#binary-hex">Binary to Hexadecimal Conversion</a></li>
+      <li><a href="#hex-binary">Hexadecimal to Binary Conversion</a></li>
+      <li><a href="#truth-tables">Truth Tables</a></li>
+      <li><a href="#boolean-algebra">Boolean Algebra</a></li>
+      <li><a href="#binary-subtraction">Binary Subtraction</a></li>
+      <li><a href="#ones-complement">1's Complement</a></li>
+      <li><a href="#twos-complement">2's Complement</a></li>
+    </ul>
+  </div>
+
+  <div id="details"> 
+    <h2 id="number-system">Number System</h2>
+    <p> A number system is a writing system for denoting numbers logically using digits or other symbols. It provides a unique representation of every number and reflects the arithmetic and algebraic structure of numbers. In computing, several number systems are utilized: </p>
+    <br><p> Decimal (Base-10): The standard system for denoting integer and non-integer numbers, using digits from 0 to 9.<br><br>
+    Binary (Base-2): Utilized internally by almost all modern computers and computer-based devices because it is straightforward to implement with digital electronic circuitry. It uses only two digits: 0 and 1.<br><br>
+    Octal (Base-8): Uses digits from 0 to 7. Each octal digit represents three binary digits, making it more compact for representing binary numbers.<br><br>
+    Hexadecimal (Base-16): Uses digits from 0 to 9 and letters A to F. Each hexadecimal digit represents four binary digits, providing a more human-friendly representation of binary-coded values.<br>
+    Understanding these systems is crucial for tasks such as data representation, memory addressing, and low-level programming.<br><br>
+
+    <b>Boolean Algebra:</b>
+
+    Boolean algebra is a branch of mathematics that deals with variables that have two distinct values: true and false, typically denoted as 1 and 0, respectively. It forms the foundation of digital logic and is essential for designing and understanding computer circuits and algorithms. Key concepts include:
+
+    Logical Operations: AND, OR, and NOT operations that define how binary variables interact.
+
+    Truth Tables: Tables that list all possible values of logical variables and the result of applying logical operations to them.
+
+    Simplification of Expressions: Techniques like De Morgan's laws and Karnaugh maps are used to simplify complex Boolean expressions, optimizing digital circuits.
+
+    Proficiency in Boolean algebra is vital for tasks such as circuit design, algorithm optimization, and understanding the underlying principles of computer operations. </p><br>
+
+    <h2 id="binary-addition">Binary Addition</h2> 
+    <br>	
+    <p>Rules of Binary Addition<br><br>
+    0 + 0 = 0<br>
+    0 + 1 = 1<br>
+    1 + 0 = 1<br>
+    1 + 1 = 10 (This is where you "carry" over the 1, similar to decimal addition.) </p><br>
+
+    <p> Simple example is <br> <br>
+      01011<br>
+    +1101 </br>
+    -------- <br>
+    11000 <br>
+    <br>
+
+    <b id="binary-decimal">1. Binary to Decimal Conversion </b><br> 
+    To convert a binary number (base 2) to decimal (base 10), you multiply each digit by the power of 2 and sum the results.<br><br>
+
+    Steps:<br><br>
+
+    Write the binary number.
+    Starting from the right, assign each digit a power of 2 (2^0, 2^1, 2^2, etc.).
+    Multiply each binary digit by the corresponding power of 2.
+    Sum the results.
+    Example: Convert 1011 (binary) to decimal.<br><br>
+
+    Start from the right:<br><br>
+    1 = 2^3 = 8<br>
+    0 = 2^2 = 0<br>
+    1 = 2^1 = 2<br>
+    1 = 2^0 = 1<br>
+
+    Now sum the results:<br>
+    8 + 0 + 2 + 1 = 11 (decimal)<br>
+
+    So, 1011 (binary) = 11 (decimal).<br><br>
+
+    <b id="decimal-binary"> 2. Decimal to Binary Conversion</b><br><br>
+    To convert a decimal number (base 10) to binary (base 2), divide the number by 2, recording the remainder each time. Then, read the remainders from bottom to top.<br>
+
+    <br>Steps:<br>
+
+    Divide the decimal number by 2.
+    Write down the remainder.
+    Continue dividing by 2 until the quotient is 0.
+    The binary number is the string of remainders read from bottom to top.<br><br>
+
+    <b id="binary-octal">3. Binary to Octal Conversion </b><br>
+    To convert binary to octal (base 8), group the binary digits in sets of three, starting from the right. If there are not enough digits to make a group of three, add leading zeros. Then, convert each group of three digits to its octal equivalent.<br>
+
+    <br>Steps:
+
+    Group the binary number into sets of three digits, starting from the right.
+    Convert each group to octal.<br><br>
+    Example: Convert 110101 (binary) to octal.<br><br>
+
+    Group the digits:<br>
+    110 101<br>
+    Convert each group to octal:<br>
+    110 (binary) = 6 (octal)<br>
+    101 (binary) = 5 (octal)<br>
+    So, 110101 (binary) = 65 (octal).<br><br>
+
+    <b id="octal-binary">4. Octal to Binary Conversion </b><br><br>
+    To convert octal to binary, convert each octal digit to its 3-bit binary equivalent.<br><br>
+
+    Steps:<br>
+
+    Write each octal digit in its 3-bit binary equivalent.<br><br>
+    Example: Convert 35 (octal) to binary.<br><br>	
+
+    Convert each octal digit to binary:<br>
+    3 (octal) = 011 (binary)<br>
+    5 (octal) = 101 (binary)<br>
+    So, 35 (octal) = 011101 (binary).<br><br>
+
+    <b id="binary-hex">5. Binary to Hexadecimal Conversion</b><br><br>
+    To convert binary to hexadecimal (base 16), group the binary digits in sets of four, starting from the right. If there are not enough digits to make a group of four, add leading zeros. Then, convert each group of four binary digits to its hexadecimal equivalent.
+
+    <br><br>Steps:<br>
+
+    Group the binary number into sets of four digits, starting from the right.
+    Convert each group to hexadecimal.<br><br>
+    Example: Convert 1011101 (binary) to hexadecimal.<br><br>
+
+    Group the digits:<br>
+    1011 101<br>
+    Add leading zeros to make a full group of four:<br>
+    1011 1101<br>
+    Convert each group to hexadecimal:<br>
+    1011 (binary) = B (hexadecimal)<br>
+    1101 (binary) = D (hexadecimal)<br>
+    So, 1011101 (binary) = BD (hexadecimal).<br><br>
+
+    <b id="hex-binary">6. Hexadecimal to Binary Conversion</b><br><br>
+    To convert hexadecimal to binary, convert each hexadecimal digit to its 4-bit binary equivalent.<br><br>
+
+    Steps:<br>
+
+    Write each hexadecimal digit in its 4-bit binary equivalent.<br><br>
+    Example: Convert A3 (hexadecimal) to binary.<br><br>
+
+    Convert each hexadecimal digit to binary:<br>
+    A (hexadecimal) = 1010 (binary)<br>
+    3 (hexadecimal) = 0011 (binary)<br>
+    So, A3 (hexadecimal) = 10100011 (binary).<br> </p> <br>
+    <h2 id="truth-tables">Truth Tables</h2>
+    <img src="https://siit.co/blog/file_storage/posts/June2021/sRiXCb1tWOHWn4dPBAVu.png" width="100%"> <br>
+    <h3> And Gate: </h3> <br> <p>The AND gate outputs 1 only if both inputs are 1. If either or both inputs are 0, the output will be 0 </p><br>
+    <h3> OR Gate :</h3> <br><p>The OR gate outputs 1 if either or both of the inputs are 1. It outputs 0 only when both inputs are 0 </p><br>
+    <h3> NAND Gate: </h3> <br><p>The NAND gate is the opposite (negation) of the AND gate. It outputs 1 unless both inputs are 1. When both inputs are 1, the output is 0 </p><br>
+    <h3> NOR Gate :</h3> <br><p>The NOR gate is the opposite (negation) of the OR gate. It outputs 1 only when both inputs are 0. If either or both inputs are 1, the output is 0 </p><br>
+    <h3> XNOR Gate: </h3> <br><p>The XNOR (Exclusive NOR) gate is the negation (NOT) of the XOR gate. It outputs 1 when both inputs are the same (either 0,0 or 1,1), and it outputs 0 when the inputs are different </p><br>
+    <h3> NOT Gate :</h3> <br><p>The NOT gate, also known as an inverter, is one of the simplest logical gates in digital electronics. It is a unary operator, meaning it operates on a single input, and its function is to invert or negate the input value. </p><br>
+    <h3> XOR Gate: </h3><br><p>The XOR (Exclusive OR) gate outputs 1 when exactly one of the inputs is 1. If both inputs are the same (either 0,0 or 1,1), the output is 0	 </p><br>
+
+    <h2 id="boolean-algebra">Laws of Boolean Algebra</h2>
+    <img src="https://www.electronics-tutorials.ws/wp-content/uploads/2022/09/boolean-algebra-table.jpg?fit=600%2C355"> <br>
+
+    <h2 id="binary-subtraction">Binary Subtraction</h2> 
+<P>Binary subtraction is a key operation in digital electronics, and there are several methods to perform it. The most commonly used techniques involve 1's complement and 2's complement, which allow subtraction to be performed by adding binary numbers.</P>
+    <h3 id="ones-complement">1s' compliment</h3> 
+        <P>1's complement is a binary representation system used to represent negative numbers. It works by flipping all the bits of a given binary number—changing 0s to 1s and 1s to 0s. This system is one of the early methods used in digital computers to handle signed numbers (both positive and negative).</p> <br>
+            <p>Steps to Perform 1's Complement:<BR>
+            Write the binary number: Start with the binary number you want to find the 1's complement of.
+            
+            Invert the bits: Flip every bit in the binary number:<BR><BR>
+            
+            Change every 0 to 1.<BR>
+            Change every 1 to 0.<BR>
+            The result is the 1's complement: After inverting all the bits, you get the 1's complement of the number.<BR>
+            
+            Example 1: 1's Complement of a Positive Number<BR><BR>
+            Let’s say we want to find the 1's complement of the binary number 1010.<BR><BR>
+            
+            Step 1: Start with 1010.<BR>
+            Step 2: Invert the bits:<BR>
+            1 becomes 0<BR>
+            0 becomes 1<BR>
+            1 becomes 0<BR>
+            0 becomes 1<BR>
+            Step 3: The result is 0101.<BR>
+            So, the 1's complement of 1010 is 0101.</p><BR>
+            <P><b>1. Steps for Binary Subtraction Using 1's Complement:</b><BR><BR>
+            Step 1: Write the binary numbers<BR>
+            Write the binary representations of the numbers you are subtracting. Let's assume we want to subtract B (7) from A (9).<BR>
+            
+            A = 9 (binary representation: 1001)<BR>
+            B = 7 (binary representation: 0111)<BR>
+            Step 2: Find the 1's complement of the number to subtract<BR>
+            Find the 1's complement of B, which is the number you're subtracting. To do this, invert all the bits of B.<BR>
+            
+            B = 7 (binary: 0111)<BR>
+            Invert the bits: 1000 (1's complement of 7)<BR>
+            Step 3: Add the 1's complement of B to A<BR>
+            Now, add the 1's complement of B (which is 1000) to A (which is 1001), as if it were a normal binary addition.<BR> </p>
+            <br> <p> 01001  <br> +1000 <br> -------  <br> 10001 </p>
+            <p>Step 4: Handle the end-around carry
+            The result of the addition is 10001, but since we're working with 4-bit numbers, we need to drop the leftmost bit (1) and add it back to the result. This is called the end-around carry. </p>
+            <br> <p> 00001  <br> +0001 <br> -------  <br> 0010  <br> So, the result of 9 - 7 is 2 in binary (0010), which is the correct result</p>
+            <BR><BR>
+
+    <h3 id="twos-complement">2s' compliment</h3>    
+    <p>Binary Subtraction Using 2's Complement...</p>
+    <p>Binary Subtraction Using 2's Complement
+        Binary subtraction can be simplified by using 2's complement because it allows us to perform subtraction as an addition operation. By converting the number to be subtracted into its 2's complement form (which represents the negative of the number), subtraction becomes the same as adding that negative number.<br>
+        
+        Steps for Binary Subtraction Using 2's Complement:<br>
+        Let's walk through the steps of subtracting two binary numbers using 2's complement.<br><br>
+        
+        <b>Step-by-Step Process:</b><br>
+        Write the binary numbers you want to subtract.<br>
+        Find the 2's complement of the number you're subtracting (this gives the negative value).<br>
+        Add the 2's complement of the number you're subtracting to the first number.<br>
+        Handle the carry:<br>
+        If there's a carry out (i.e., a leftmost carry bit), discard it.<br>
+        The result will be the correct difference. </p><br>
+        <img src="https://media.geeksforgeeks.org/wp-content/uploads/3-160.png" width="100%">
+  </div>
+</div>
+</body>
+</html>
