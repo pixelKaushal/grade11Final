@@ -1,450 +1,448 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Operating System</title>
-    <link rel="stylesheet" href="index.css" />
+<html>
+  <head> <title> Operating System  </title>
+  <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div id="main">
-      <div id="TOC">
-        <h2>Topics</h2>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#intro">Introduction</a></li>
-          <li><a href="#system-software">System Software</a></li>
-          <li><a href="#application-software">Application Software</a></li>
-          <li><a href="#os-functions">OS Functions</a></li>
-          <li><a href="#os-types">Types of OS</a></li>
-          <li><a href="#multiprogramming">Multiprogramming</a></li>
-          <li><a href="#multitasking">Multitasking</a></li>
-          <li><a href="#multiprocessing">Multiprocessing</a></li>
-          <li><a href="#distributed-os">Distributed OS</a></li>
-          <li><a href="#gui-os">GUI-based Operating Systems</a></li>
-          <li><a href="#opensource-os">Open Source OS</a></li>
-          <li><a href="#mobile-os">Mobile Operating Systems</a></li>
-          <li><a href="#mobile-os-types">Types of Mobile OS</a></li>
-          <li>
-            <a href="#mobile-os-linux">Mobile OS & Linux Distributions</a>
-          </li>
-          <li><a href="#linux-unix">Introduction to Linux and Unix</a></li>
-          <li><a href="#os-user-types">OS Based on User Roles</a></li>
-          <li><a href="#os-examples">Popular OS</a></li>
-          <li><a href="#os-architecture">OS Architecture</a></li>
-          <li><a href="#os-virtualization">OS Virtualization</a></li>
-          <li><a href="#os-security">OS Security</a></li>
-          <li><a href="#os-future">Future of Operating Systems</a></li>
-        </ul>
-      </div>
-
-      <div id="details">
-        <h1 id="intro">Introduction</h1>
-        <p>
-          Software is a collection of instructions that tell a computer how to
-          perform specific tasks. It is generally classified into two broad
-          categories: system software and application software. System software
-          includes the operating system that manages hardware resources and
-          provides a platform for running application software. Application
-          software, on the other hand, allows users to perform specific tasks
-          like browsing, editing, or gaming.
-        </p>
-
-        <h2 id="system-software">System Software</h2>
-        <p>
-          System software is designed to control and manage computer hardware,
-          making it possible for application software to run. The most important
-          example of system software is the operating system (OS), which
-          coordinates and allocates resources to various applications. Other
-          system software includes device drivers, utility programs, and
-          compilers.
-        </p>
-
-        <h2 id="application-software">Application Software</h2>
-        <p>
-          Application software consists of programs designed for end users to
-          accomplish tasks. These tasks could range from productivity
-          applications like word processors and spreadsheets to entertainment
-          software like games and media players. Application software relies on
-          system software to operate effectively.
-        </p>
-
-        <h2 id="os-functions">Functions of an Operating System</h2>
-        <p>
-          The operating system (OS) performs several crucial functions to ensure
-          smooth and efficient operation of the computer system. These include
-          managing hardware resources, handling processes, and controlling
-          input/output operations. The OS also facilitates security, user
-          interface management, and networking.
-        </p>
-        <ul>
-          <li>
-            Process Management: OS controls and schedules tasks, ensuring smooth
-            execution of programs and processes.
-          </li>
-          <li>
-            Memory Management: The OS allocates memory space to running programs
-            and ensures efficient use of RAM.
-          </li>
-          <li>
-            File System Management: It manages files and directories, organizing
-            data storage and retrieval.
-          </li>
-          <li>
-            Device Management: The OS coordinates communication between software
-            and hardware devices like printers, monitors, etc.
-          </li>
-          <li>
-            Security and User Authentication: The OS ensures the system is
-            protected from unauthorized access through password protection and
-            encryption.
-          </li>
-          <li>
-            Networking: Manages communication between computers over a network,
-            enabling data exchange and sharing.
-          </li>
-          <li>
-            Resource Allocation: The OS distributes resources like CPU time and
-            memory across running processes.
-          </li>
-          <li>
-            Graphical User Interface (GUI) Management: Manages the user
-            interface, providing an interactive environment for users to
-            interact with the system.
-          </li>
-        </ul>
-
-        <h2 id="os-types">Types of Operating Systems</h2>
-        <p>
-          There are several types of operating systems, each tailored to meet
-          specific needs and requirements. Some are optimized for single-user
-          environments, while others cater to multi-user systems or real-time
-          applications. Each type has distinct features and capabilities that
-          make them suited for different computing environments.
-        </p>
-        <ul>
-          <li>
-            Batch OS: Processes tasks in batches without interaction, mainly
-            used for non-interactive tasks in mainframe systems.
-          </li>
-          <li>
-            Multitasking OS: Allows multiple processes to run concurrently,
-            improving system efficiency and responsiveness.
-          </li>
-          <li>
-            Real-Time OS: Designed for systems that require immediate responses,
-            such as embedded systems in cars or medical devices.
-          </li>
-          <li>
-            Multi-User OS: Enables multiple users to access a system
-            simultaneously, making it ideal for servers and mainframes.
-          </li>
-          <li>
-            Distributed OS: Manages a network of independent computers and
-            allows them to work together as a unified system.
-          </li>
-          <li>
-            Embedded OS: Tailored for specific devices with limited resources,
-            such as IoT devices, smartphones, and smart appliances.
-          </li>
-          <li>
-            Mobile OS: Optimized for mobile devices like smartphones and
-            tablets, providing touch interfaces and portability.
-          </li>
-          <li>
-            Cloud-Based OS: Operates entirely from the cloud, enabling access to
-            software and resources from anywhere with an internet connection.
-          </li>
-        </ul>
-
-        <h2 id="multiprogramming">Multiprogramming</h2>
-        <p>
-          Multiprogramming is the technique where multiple programs are loaded
-          into memory and the CPU switches between them, ensuring that the CPU
-          is always utilized. It increases CPU efficiency by minimizing idle
-          time, but requires careful management of memory and resources.
-        </p>
-
-        <h2 id="multitasking">Multitasking</h2>
-        <p>
-          Multitasking is a technique that allows an operating system to execute
-          more than one task simultaneously. It gives the illusion of concurrent
-          execution by rapidly switching between tasks. In preemptive
-          multitasking, the OS controls when tasks are switched, while in
-          cooperative multitasking, the tasks themselves decide when to yield
-          control.
-        </p>
-
-        <h2 id="multiprocessing">Multiprocessing</h2>
-        <p>
-          Multiprocessing involves the use of two or more processors within a
-          single computer system. Each processor can execute different tasks
-          simultaneously, improving performance, especially for computationally
-          heavy applications. It is often used in high-performance computing
-          systems and servers.
-        </p>
-
-        <h2 id="distributed-os">Distributed OS</h2>
-        <p>
-          A Distributed OS manages a collection of independent computers that
-          work together as a single system. It allows resources to be shared
-          seamlessly, and provides fault tolerance, load balancing, and
-          scalability. This type of OS is often used in cloud computing and
-          large enterprise systems.
-        </p>
-
-        <h2 id="gui-os">GUI-based Operating Systems</h2>
-        <p>
-          A Graphical User Interface (GUI) operating system uses visual elements
-          like icons, buttons, and windows to interact with the user, making it
-          user-friendly and intuitive. Examples include Microsoft Windows and
-          macOS. GUI-based OSes make it easier for users to interact with the
-          computer without needing to memorize complex commands.
-        </p>
-        <ul>
-          <li>
-            Ease of Use: GUI OSes provide visual cues and controls, allowing
-            users to interact through pointing devices like a mouse.
-          </li>
-          <li>
-            Multi-Window Support: Users can run multiple programs in separate
-            windows, increasing productivity.
-          </li>
-          <li>
-            Accessibility: GUIs are typically more accessible to non-technical
-            users, improving user adoption.
-          </li>
-          <li>
-            Visual Aesthetics: GUI-based OSes often come with visually appealing
-            designs, themes, and layouts.
-          </li>
-        </ul>
-
-        <h2 id="cli-os">CLI-based Operating Systems</h2>
-        <p>
-          A Command-Line Interface (CLI) operating system, unlike its GUI
-          counterpart, relies on text-based input. Users interact with the OS by
-          typing commands through a command-line shell, such as the Terminal in
-          Linux or Command Prompt in Windows. While this interface requires
-          memorizing commands, it offers high efficiency and flexibility for
-          users who are comfortable with text commands and prefer fine control
-          over their system.
-        </p>
-        <ul>
-          <li>
-            Efficient for Experts: CLI is ideal for power users and IT
-            professionals, offering precise control over system tasks.
-          </li>
-          <li>
-            Speed: Once commands are learned, CLI allows users to execute tasks
-            quickly and with fewer resources compared to GUI.
-          </li>
-          <li>
-            Customization: CLI offers a high degree of customization through
-            scripts and automation, making it suitable for advanced
-            configurations.
-          </li>
-          <li>
-            Minimal Resource Usage: Since CLI doesn't require graphic rendering,
-            it consumes fewer system resources, making it suitable for low-power
-            or older devices.
-          </li>
-        </ul>
-
-        <h2>CLI vs GUI</h2>
-        <p>
-          While GUI operating systems are preferred by most users due to their
-          ease of use and intuitive design, CLI operating systems are favored by
-          developers, system administrators, and users who need greater control
-          and faster performance. CLI provides a more direct and flexible way of
-          interacting with the system, enabling complex operations through
-          simple commands. On the other hand, GUIs allow for more interactive
-          and visually enriched experiences, making it easier for everyday users
-          to perform common tasks without the need for extensive technical
-          knowledge.
-        </p>
-        <img
-          src="https://hi-static.z-dn.net/files/d64/333603d1ed9c8453378acdffdfa85c34.jpeg"
-        />
-        <h2 id="opensource-os">Open Source Operating Systems</h2>
-        <p>
-          Open-source operating systems are those whose source code is publicly
-          available for modification, enhancement, and distribution. These OSes
-          foster community collaboration, transparency, and customization.
-          Popular examples include Linux and FreeBSD.
-        </p>
-        <ul>
-          <li>
-            Customizability: Users can modify the code to suit their specific
-            needs, making open-source OSes highly adaptable.
-          </li>
-          <li>
-            Community Support: Open-source OSes often have strong
-            community-driven support forums and documentation.
-          </li>
-          <li>
-            Cost: Open-source OSes are typically free to use, lowering software
-            costs for users and organizations.
-          </li>
-          <li>
-            Security: Open-source OSes are continuously reviewed by the
-            community, often making them more secure due to rapid identification
-            and patching of vulnerabilities.
-          </li>
-        </ul>
-
-        <h2 id="mobile-os">Mobile Operating Systems</h2>
-        <p>
-          Mobile operating systems are specifically designed for mobile devices
-          like smartphones and tablets. These OSes provide features like touch
-          support, mobile networking, and energy-efficient operation. Examples
-          include Android, iOS, and HarmonyOS.
-        </p>
-        <ul>
-          <li>
-            Touch-Based Interface: Mobile OSes are designed to support
-            touch-based input, making them ideal for smartphones and tablets.
-          </li>
-          <li>
-            Connectivity: These OSes are optimized for mobile data usage, Wi-Fi,
-            Bluetooth, and GPS.
-          </li>
-          <li>
-            App Ecosystem: Mobile OSes often come with extensive app stores,
-            providing access to a wide range of applications.
-          </li>
-          <li>
-            Energy Efficiency: Mobile OSes are designed to optimize battery
-            life, an essential feature for portable devices.
-          </li>
-        </ul>
-
-        <h2 id="mobile-os-types">Types of Mobile OS</h2>
-        <p>
-          There are several types of mobile operating systems, each offering
-          distinct features and capabilities. The major mobile OSes include
-          Android, iOS, and HarmonyOS. Each OS is designed to cater to different
-          device types, markets, and user needs.
-        </p>
-        <ul>
-          <li>
-            Android: An open-source OS developed by Google, widely used across a
-            variety of mobile devices.
-          </li>
-          <li>
-            iOS: A proprietary OS developed by Apple, known for its
-            user-friendly interface and high level of security.
-          </li>
-          <li>
-            HarmonyOS: Developed by Huawei, it is designed for a range of smart
-            devices and aims to provide a unified ecosystem.
-          </li>
-        </ul>
-
-        <h2 id="mobile-os-linux">Mobile OS and Linux Distributions</h2>
-        <p>
-          Linux-based mobile operating systems, such as Android, are built on
-          the Linux kernel. The flexibility and open-source nature of Linux have
-          made it a popular foundation for mobile OSes. Various Linux
-          distributions are tailored for different use cases, including mobile
-          devices.
-        </p>
-        <ul>
-          <li>
-            Android: Built on the Linux kernel, Android offers an open-source
-            platform with a large app ecosystem.
-          </li>
-          <li>
-            Ubuntu Touch: A Linux distribution optimized for mobile devices,
-            focusing on open-source development.
-          </li>
-        </ul>
-
-        <h2 id="linux-unix">Introduction to Linux and Unix</h2>
-        <p>
-          Linux and Unix are powerful, multi-user, multitasking operating
-          systems. Unix was developed in the 1960s and is the foundation of many
-          modern OSes, including Linux. Linux, an open-source clone of Unix, has
-          become widely popular due to its flexibility and use in a variety of
-          environments, from mobile devices to servers.
-        </p>
-        <ul>
-          <li>
-            Unix: Originally developed by AT&T, Unix became the basis for many
-            operating systems. It is known for its stability, security, and
-            multi-user capabilities.
-          </li>
-          <li>
-            Linux: A free and open-source operating system that is highly
-            customizable and widely used in servers, desktops, and mobile
-            devices like Android.
-          </li>
-        </ul>
-
-        <h2 id="os-user-types">OS Based on User Roles</h2>
-        <p>
-          Operating systems can be designed based on the roles they cater to.
-          These user roles may include administrator, regular user, guest user,
-          and system-level roles, where administrators have full control over
-          the system.
-        </p>
-
-        <h2 id="os-examples">Popular OS</h2>
-        <p>Some popular operating systems include:</p>
-        <ul>
-          <li>Windows</li>
-          <li>macOS</li>
-          <li>Linux</li>
-          <li>Android</li>
-          <li>iOS</li>
-        </ul>
-
-        <h2 id="os-architecture">OS Architecture</h2>
-        <p>
-          Operating systems can be designed with different architectures such as
-          monolithic, microkernel, and hybrid architectures. Each architecture
-          has its advantages and trade-offs in terms of performance, complexity,
-          and modularity.
-        </p>
-
-        <h2 id="os-virtualization">OS Virtualization</h2>
-        <p>
-          Virtualization allows an OS to run multiple virtual environments on a
-          single physical machine. It enables efficient resource utilization,
-          isolation, and flexibility in managing different operating systems.
-        </p>
-
-        <h2 id="os-security">OS Security</h2>
-        <p>
-          OS security involves measures to protect the system from unauthorized
-          access, malware, and data breaches. Techniques like encryption,
-          firewalls, and intrusion detection are implemented to safeguard the
-          system.
-        </p>
-
-        <h2 id="os-future">Future of Operating Systems</h2>
-        <p>
-          The future of operating systems lies in the continued evolution of
-          virtualization, cloud computing, and artificial intelligence. As
-          computing becomes more distributed and integrated into everyday life,
-          operating systems will need to adapt to new forms of hardware, data
-          management techniques, and security challenges.
-        </p>
-        <ul>
-          <li>
-            AI Integration: Operating systems will incorporate AI to automate
-            tasks, optimize system performance, and improve user experience.
-          </li>
-          <li>
-            Edge Computing: OS will evolve to manage decentralized systems where
-            data processing occurs closer to the data source, reducing latency.
-          </li>
-          <li>
-            Quantum Computing: Future OSes may need to support quantum computing
-            hardware and quantum algorithms.
-          </li>
-        </ul>
-      </div>
+  <div id="main">
+    <div id="TOC">
+      <h2>Topics</h2>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#system-software">System Software</a></li>
+        <li><a href="#application-software">Application Software</a></li>
+        <li><a href="#os-functions">OS Functions</a></li>
+        <li><a href="#os-types">Types of OS</a></li>
+        <li><a href="#multiprogramming">Multiprogramming</a></li>
+        <li><a href="#multitasking">Multitasking</a></li>
+        <li><a href="#multiprocessing">Multiprocessing</a></li>
+        <li><a href="#distributed-os">Distributed OS</a></li>
+        <li><a href="#gui-os">GUI-based Operating Systems</a></li>
+        <li><a href="#opensource-os">Open Source OS</a></li>
+        <li><a href="#mobile-os">Mobile Operating Systems</a></li>
+        <li><a href="#mobile-os-types">Types of Mobile OS</a></li>
+        <li>
+          <a href="#mobile-os-linux">Mobile OS & Linux Distributions</a>
+        </li>
+        <li><a href="#linux-unix">Introduction to Linux and Unix</a></li>
+        <li><a href="#os-user-types">OS Based on User Roles</a></li>
+        <li><a href="#os-examples">Popular OS</a></li>
+        <li><a href="#os-architecture">OS Architecture</a></li>
+        <li><a href="#os-virtualization">OS Virtualization</a></li>
+        <li><a href="#os-security">OS Security</a></li>
+        <li><a href="#os-future">Future of Operating Systems</a></li>
+      </ul>
     </div>
+
+    <div id="details">
+      <h1 id="intro">Introduction</h1>
+      <p>
+        Software is a collection of instructions that tell a computer how to
+        perform specific tasks. It is generally classified into two broad
+        categories: system software and application software. System software
+        includes the operating system that manages hardware resources and
+        provides a platform for running application software. Application
+        software, on the other hand, allows users to perform specific tasks
+        like browsing, editing, or gaming.
+      </p>
+
+      <h2 id="system-software">System Software</h2>
+      <p>
+        System software is designed to control and manage computer hardware,
+        making it possible for application software to run. The most important
+        example of system software is the operating system (OS), which
+        coordinates and allocates resources to various applications. Other
+        system software includes device drivers, utility programs, and
+        compilers.
+      </p>
+
+      <h2 id="application-software">Application Software</h2>
+      <p>
+        Application software consists of programs designed for end users to
+        accomplish tasks. These tasks could range from productivity
+        applications like word processors and spreadsheets to entertainment
+        software like games and media players. Application software relies on
+        system software to operate effectively.
+      </p>
+
+      <h2 id="os-functions">Functions of an Operating System</h2>
+      <p>
+        The operating system (OS) performs several crucial functions to ensure
+        smooth and efficient operation of the computer system. These include
+        managing hardware resources, handling processes, and controlling
+        input/output operations. The OS also facilitates security, user
+        interface management, and networking.
+      </p>
+      <ul>
+        <li>
+          Process Management: OS controls and schedules tasks, ensuring smooth
+          execution of programs and processes.
+        </li>
+        <li>
+          Memory Management: The OS allocates memory space to running programs
+          and ensures efficient use of RAM.
+        </li>
+        <li>
+          File System Management: It manages files and directories, organizing
+          data storage and retrieval.
+        </li>
+        <li>
+          Device Management: The OS coordinates communication between software
+          and hardware devices like printers, monitors, etc.
+        </li>
+        <li>
+          Security and User Authentication: The OS ensures the system is
+          protected from unauthorized access through password protection and
+          encryption.
+        </li>
+        <li>
+          Networking: Manages communication between computers over a network,
+          enabling data exchange and sharing.
+        </li>
+        <li>
+          Resource Allocation: The OS distributes resources like CPU time and
+          memory across running processes.
+        </li>
+        <li>
+          Graphical User Interface (GUI) Management: Manages the user
+          interface, providing an interactive environment for users to
+          interact with the system.
+        </li>
+      </ul>
+
+      <h2 id="os-types">Types of Operating Systems</h2>
+      <p>
+        There are several types of operating systems, each tailored to meet
+        specific needs and requirements. Some are optimized for single-user
+        environments, while others cater to multi-user systems or real-time
+        applications. Each type has distinct features and capabilities that
+        make them suited for different computing environments.
+      </p>
+      <ul>
+        <li>
+          Batch OS: Processes tasks in batches without interaction, mainly
+          used for non-interactive tasks in mainframe systems.
+        </li>
+        <li>
+          Multitasking OS: Allows multiple processes to run concurrently,
+          improving system efficiency and responsiveness.
+        </li>
+        <li>
+          Real-Time OS: Designed for systems that require immediate responses,
+          such as embedded systems in cars or medical devices.
+        </li>
+        <li>
+          Multi-User OS: Enables multiple users to access a system
+          simultaneously, making it ideal for servers and mainframes.
+        </li>
+        <li>
+          Distributed OS: Manages a network of independent computers and
+          allows them to work together as a unified system.
+        </li>
+        <li>
+          Embedded OS: Tailored for specific devices with limited resources,
+          such as IoT devices, smartphones, and smart appliances.
+        </li>
+        <li>
+          Mobile OS: Optimized for mobile devices like smartphones and
+          tablets, providing touch interfaces and portability.
+        </li>
+        <li>
+          Cloud-Based OS: Operates entirely from the cloud, enabling access to
+          software and resources from anywhere with an internet connection.
+        </li>
+      </ul>
+
+      <h2 id="multiprogramming">Multiprogramming</h2>
+      <p>
+        Multiprogramming is the technique where multiple programs are loaded
+        into memory and the CPU switches between them, ensuring that the CPU
+        is always utilized. It increases CPU efficiency by minimizing idle
+        time, but requires careful management of memory and resources.
+      </p>
+
+      <h2 id="multitasking">Multitasking</h2>
+      <p>
+        Multitasking is a technique that allows an operating system to execute
+        more than one task simultaneously. It gives the illusion of concurrent
+        execution by rapidly switching between tasks. In preemptive
+        multitasking, the OS controls when tasks are switched, while in
+        cooperative multitasking, the tasks themselves decide when to yield
+        control.
+      </p>
+
+      <h2 id="multiprocessing">Multiprocessing</h2>
+      <p>
+        Multiprocessing involves the use of two or more processors within a
+        single computer system. Each processor can execute different tasks
+        simultaneously, improving performance, especially for computationally
+        heavy applications. It is often used in high-performance computing
+        systems and servers.
+      </p>
+
+      <h2 id="distributed-os">Distributed OS</h2>
+      <p>
+        A Distributed OS manages a collection of independent computers that
+        work together as a single system. It allows resources to be shared
+        seamlessly, and provides fault tolerance, load balancing, and
+        scalability. This type of OS is often used in cloud computing and
+        large enterprise systems.
+      </p>
+
+      <h2 id="gui-os">GUI-based Operating Systems</h2>
+      <p>
+        A Graphical User Interface (GUI) operating system uses visual elements
+        like icons, buttons, and windows to interact with the user, making it
+        user-friendly and intuitive. Examples include Microsoft Windows and
+        macOS. GUI-based OSes make it easier for users to interact with the
+        computer without needing to memorize complex commands.
+      </p>
+      <ul>
+        <li>
+          Ease of Use: GUI OSes provide visual cues and controls, allowing
+          users to interact through pointing devices like a mouse.
+        </li>
+        <li>
+          Multi-Window Support: Users can run multiple programs in separate
+          windows, increasing productivity.
+        </li>
+        <li>
+          Accessibility: GUIs are typically more accessible to non-technical
+          users, improving user adoption.
+        </li>
+        <li>
+          Visual Aesthetics: GUI-based OSes often come with visually appealing
+          designs, themes, and layouts.
+        </li>
+      </ul>
+
+      <h2 id="cli-os">CLI-based Operating Systems</h2>
+      <p>
+        A Command-Line Interface (CLI) operating system, unlike its GUI
+        counterpart, relies on text-based input. Users interact with the OS by
+        typing commands through a command-line shell, such as the Terminal in
+        Linux or Command Prompt in Windows. While this interface requires
+        memorizing commands, it offers high efficiency and flexibility for
+        users who are comfortable with text commands and prefer fine control
+        over their system.
+      </p>
+      <ul>
+        <li>
+          Efficient for Experts: CLI is ideal for power users and IT
+          professionals, offering precise control over system tasks.
+        </li>
+        <li>
+          Speed: Once commands are learned, CLI allows users to execute tasks
+          quickly and with fewer resources compared to GUI.
+        </li>
+        <li>
+          Customization: CLI offers a high degree of customization through
+          scripts and automation, making it suitable for advanced
+          configurations.
+        </li>
+        <li>
+          Minimal Resource Usage: Since CLI doesn't require graphic rendering,
+          it consumes fewer system resources, making it suitable for low-power
+          or older devices.
+        </li>
+      </ul>
+
+      <h2>CLI vs GUI</h2>
+      <p>
+        While GUI operating systems are preferred by most users due to their
+        ease of use and intuitive design, CLI operating systems are favored by
+        developers, system administrators, and users who need greater control
+        and faster performance. CLI provides a more direct and flexible way of
+        interacting with the system, enabling complex operations through
+        simple commands. On the other hand, GUIs allow for more interactive
+        and visually enriched experiences, making it easier for everyday users
+        to perform common tasks without the need for extensive technical
+        knowledge.
+      </p>
+      <img
+        src="https://hi-static.z-dn.net/files/d64/333603d1ed9c8453378acdffdfa85c34.jpeg"
+      />
+      <h2 id="opensource-os">Open Source Operating Systems</h2>
+      <p>
+        Open-source operating systems are those whose source code is publicly
+        available for modification, enhancement, and distribution. These OSes
+        foster community collaboration, transparency, and customization.
+        Popular examples include Linux and FreeBSD.
+      </p>
+      <ul>
+        <li>
+          Customizability: Users can modify the code to suit their specific
+          needs, making open-source OSes highly adaptable.
+        </li>
+        <li>
+          Community Support: Open-source OSes often have strong
+          community-driven support forums and documentation.
+        </li>
+        <li>
+          Cost: Open-source OSes are typically free to use, lowering software
+          costs for users and organizations.
+        </li>
+        <li>
+          Security: Open-source OSes are continuously reviewed by the
+          community, often making them more secure due to rapid identification
+          and patching of vulnerabilities.
+        </li>
+      </ul>
+
+      <h2 id="mobile-os">Mobile Operating Systems</h2>
+      <p>
+        Mobile operating systems are specifically designed for mobile devices
+        like smartphones and tablets. These OSes provide features like touch
+        support, mobile networking, and energy-efficient operation. Examples
+        include Android, iOS, and HarmonyOS.
+      </p>
+      <ul>
+        <li>
+          Touch-Based Interface: Mobile OSes are designed to support
+          touch-based input, making them ideal for smartphones and tablets.
+        </li>
+        <li>
+          Connectivity: These OSes are optimized for mobile data usage, Wi-Fi,
+          Bluetooth, and GPS.
+        </li>
+        <li>
+          App Ecosystem: Mobile OSes often come with extensive app stores,
+          providing access to a wide range of applications.
+        </li>
+        <li>
+          Energy Efficiency: Mobile OSes are designed to optimize battery
+          life, an essential feature for portable devices.
+        </li>
+      </ul>
+
+      <h2 id="mobile-os-types">Types of Mobile OS</h2>
+      <p>
+        There are several types of mobile operating systems, each offering
+        distinct features and capabilities. The major mobile OSes include
+        Android, iOS, and HarmonyOS. Each OS is designed to cater to different
+        device types, markets, and user needs.
+      </p>
+      <ul>
+        <li>
+          Android: An open-source OS developed by Google, widely used across a
+          variety of mobile devices.
+        </li>
+        <li>
+          iOS: A proprietary OS developed by Apple, known for its
+          user-friendly interface and high level of security.
+        </li>
+        <li>
+          HarmonyOS: Developed by Huawei, it is designed for a range of smart
+          devices and aims to provide a unified ecosystem.
+        </li>
+      </ul>
+
+      <h2 id="mobile-os-linux">Mobile OS and Linux Distributions</h2>
+      <p>
+        Linux-based mobile operating systems, such as Android, are built on
+        the Linux kernel. The flexibility and open-source nature of Linux have
+        made it a popular foundation for mobile OSes. Various Linux
+        distributions are tailored for different use cases, including mobile
+        devices.
+      </p>
+      <ul>
+        <li>
+          Android: Built on the Linux kernel, Android offers an open-source
+          platform with a large app ecosystem.
+        </li>
+        <li>
+          Ubuntu Touch: A Linux distribution optimized for mobile devices,
+          focusing on open-source development.
+        </li>
+      </ul>
+
+      <h2 id="linux-unix">Introduction to Linux and Unix</h2>
+      <p>
+        Linux and Unix are powerful, multi-user, multitasking operating
+        systems. Unix was developed in the 1960s and is the foundation of many
+        modern OSes, including Linux. Linux, an open-source clone of Unix, has
+        become widely popular due to its flexibility and use in a variety of
+        environments, from mobile devices to servers.
+      </p>
+      <ul>
+        <li>
+          Unix: Originally developed by AT&T, Unix became the basis for many
+          operating systems. It is known for its stability, security, and
+          multi-user capabilities.
+        </li>
+        <li>
+          Linux: A free and open-source operating system that is highly
+          customizable and widely used in servers, desktops, and mobile
+          devices like Android.
+        </li>
+      </ul>
+
+      <h2 id="os-user-types">OS Based on User Roles</h2>
+      <p>
+        Operating systems can be designed based on the roles they cater to.
+        These user roles may include administrator, regular user, guest user,
+        and system-level roles, where administrators have full control over
+        the system.
+      </p>
+
+      <h2 id="os-examples">Popular OS</h2>
+      <p>Some popular operating systems include:</p>
+      <ul>
+        <li>Windows</li>
+        <li>macOS</li>
+        <li>Linux</li>
+        <li>Android</li>
+        <li>iOS</li>
+      </ul>
+
+      <h2 id="os-architecture">OS Architecture</h2>
+      <p>
+        Operating systems can be designed with different architectures such as
+        monolithic, microkernel, and hybrid architectures. Each architecture
+        has its advantages and trade-offs in terms of performance, complexity,
+        and modularity.
+      </p>
+
+      <h2 id="os-virtualization">OS Virtualization</h2>
+      <p>
+        Virtualization allows an OS to run multiple virtual environments on a
+        single physical machine. It enables efficient resource utilization,
+        isolation, and flexibility in managing different operating systems.
+      </p>
+
+      <h2 id="os-security">OS Security</h2>
+      <p>
+        OS security involves measures to protect the system from unauthorized
+        access, malware, and data breaches. Techniques like encryption,
+        firewalls, and intrusion detection are implemented to safeguard the
+        system.
+      </p>
+
+      <h2 id="os-future">Future of Operating Systems</h2>
+      <p>
+        The future of operating systems lies in the continued evolution of
+        virtualization, cloud computing, and artificial intelligence. As
+        computing becomes more distributed and integrated into everyday life,
+        operating systems will need to adapt to new forms of hardware, data
+        management techniques, and security challenges.
+      </p>
+      <ul>
+        <li>
+          AI Integration: Operating systems will incorporate AI to automate
+          tasks, optimize system performance, and improve user experience.
+        </li>
+        <li>
+          Edge Computing: OS will evolve to manage decentralized systems where
+          data processing occurs closer to the data source, reducing latency.
+        </li>
+        <li>
+          Quantum Computing: Future OSes may need to support quantum computing
+          hardware and quantum algorithms.
+        </li>
+      </ul>
+    </div>
+  </div>
+  </div>
+  
   </body>
-</html>
+  </html>
