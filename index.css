@@ -68,3 +68,8 @@ a {
 #TOC ul li:hover {
   border-left: 6px solid white;
 }
+code {
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-family: "Courier New", monospace;
+}

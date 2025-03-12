@@ -8,9 +8,31 @@
       <div id="TOC">
         <h2>Topics</h2>
         <ul>
-          <li><a href="index.html">Home</li></a>
-          <li><a href="#concept">Programming Concept</li></a>
-          <li><a href="#intro2pro">Introduction To Programming Language</li></a>
+          <li><a href="index.html">Home</a></li>
+                <li><a href="#concept">Programming Concept</a></li>
+                <li><a href="#intro2pro">Introduction to Programming Language</a></li>
+                <li><a href="#level">Low Level, High Level, 4GL Programming Languages</a></li>
+                <li><a href="#machine-level">Machine-Level Language</a></li>
+                <li><a href="#assembly-level">Assembly-Level Language</a></li>
+                <li><a href="#high-level">High-Level Language</a></li>
+                <li><a href="#generations">Generations of Programming Languages</a></li>
+                <li><a href="#compiler">Compiler</a></li>
+                <li><a href="#interpreter">Interpreter</a></li>
+                <li><a href="#assembler">Assembler</a></li>
+                <li><a href="#syntax-error">Syntax Errors</a></li>
+                <li><a href="#semantic-error">Semantic Errors</a></li>
+                <li><a href="#runtime-error">Runtime Errors</a></li>
+                <li><a href="#control-structures">Control Structures</a></li>
+                <li><a href="#sequence">Sequence</a></li>
+                <li><a href="#selection">Selection</a></li>
+                <li><a href="#iteration">Iteration</a></li>
+                <li><a href="#algorithm">Algorithm</a></li>
+                <li><a href="#flowchart">Flowchart</a></li>
+                <li><a href="#pseudocode">Pseudocode</a></li>
+                <li><a href="#absolute-binary">Absolute Binary</a></li>
+                <li><a href="#bcd">BCD (Binary-Coded Decimal)</a></li>
+                <li><a href="#ascii">ASCII</a></li>
+                <li><a href="#unicode">Unicode</a></li>
           
         </ul>
       </div>
@@ -66,13 +88,623 @@
                 </UL>
             </ul>
         </ol>
-        <h3>Machine Language</h3>
-        <p>The first generation programming language are also called low level programming language because they were used to program the computer system at a very low level of abstraction. Machine language is the lowest and most elementary level of programming language and was the first type of programming language to be developed.
+        <h1 id="machine-level">Machine-Level Language</h1>
+
+    <section>
+        <h2>What is Machine-Level Language?</h2>
+        <p>
+            Machine-level language, also known as <strong>machine code</strong>, is the lowest-level programming language understood by computers. It consists of binary instructions (1s and 0s) that are directly executed by the computer's central processing unit (CPU). Each instruction corresponds to a specific operation, such as moving data, performing arithmetic, or controlling hardware.
+        </p>
+        <p>
+            Unlike high-level programming languages (e.g., Python, Java), machine-level language is not human-readable and is specific to the architecture of the processor.
+        </p>
+    </section>
+
+    <section>
+        <h2>Characteristics of Machine-Level Language</h2>
+        <ul>
+            <li><strong>Binary Format</strong>: Machine code is represented in binary (1s and 0s).</li>
+            <li><strong>Hardware-Specific</strong>: Each CPU architecture has its own unique machine language.</li>
+            <li><strong>Direct Execution</strong>: Machine code is executed directly by the CPU without the need for translation.</li>
+            <li><strong>Low-Level</strong>: It provides minimal abstraction from the hardware.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Example of Machine-Level Language</h2>
+        <p>
+            Below is an example of machine-level language in binary and hexadecimal formats:
+        </p>
+        <pre>
+            <code>
+00000000  7f 45 4c 46 02 01 01 00  00 00 00 00 00 00 00 00  |.ELF............|
+00000010  02 00 3e 00 01 00 00 00  a0 10 40 00 00 00 00 00  |..>.......@.....|
+00000020  40 00 00 00 00 00 00 00  10 31 00 00 00 00 00 00  |@........1......|
+00000030  00 00 00 00 40 00 38 00  09 00 40 00 1c 00 1b 00  |....@.8...@.....|
+            </code>
+        </pre>
+        <p>
+            This is a snippet of machine code from an executable file. Each byte represents an instruction or data that the CPU can process.
+        </p>
+    </section>
+
+    <section>
+        <h2>How Machine-Level Language Works</h2>
+        <p>
+            Machine-level language operates at the hardware level. Here's a simplified overview of how it works:
+        </p>
+        <ol>
+            <li><strong>Fetch</strong>: The CPU fetches an instruction from memory.</li>
+            <li><strong>Decode</strong>: The CPU decodes the instruction to determine the operation to perform.</li>
+            <li><strong>Execute</strong>: The CPU executes the instruction, such as adding two numbers or moving data.</li>
+            <li><strong>Store</strong>: The result of the operation is stored in memory or a register.</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Advantages of Machine-Level Language</h2>
+        <ul>
+            <li><strong>Speed</strong>: Machine code executes directly on the hardware, making it extremely fast.</li>
+            <li><strong>Efficiency</strong>: It allows for precise control over hardware resources.</li>
+            <li><strong>No Dependencies</strong>: Machine code does not require interpreters or compilers to run.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Disadvantages of Machine-Level Language</h2>
+        <ul>
+            <li><strong>Complexity</strong>: Writing and debugging machine code is difficult and error-prone.</li>
+            <li><strong>Hardware-Specific</strong>: Programs written in machine code are not portable across different CPU architectures.</li>
+            <li><strong>Readability</strong>: Machine code is not human-readable, making it challenging to understand and maintain.</li>
+        </ul>
+    </section>
+
+    <section>
             Machine level language is the only language that computer can understand. In machine level language the programmer only deals with two numbers, 0 and 1.
         </p>
-        <h3>Assembly Language</h3>
-        <h3>High Level Language</h3>
+        <section>
+          <h2 id="assembly-level">Assembly-Level Language</h2>
+          <p>
+              <strong>Assembly-level language</strong> is a low-level programming language that is closely related to machine language. It uses <strong>mnemonics</strong> (short, human-readable codes) to represent machine-level instructions. Each mnemonic corresponds to a specific machine instruction, making it easier for programmers to write and understand low-level code.
+          </p>
+          <h3>Characteristics of Assembly Language</h3>
+          <ul>
+              <li><strong>Hardware-Specific</strong>: Each CPU architecture has its own assembly language.</li>
+              <li><strong>Human-Readable</strong>: Uses mnemonics like <code>MOV</code>, <code>ADD</code>, and <code>JMP</code> instead of binary.</li>
+              <li><strong>Direct Control</strong>: Provides precise control over hardware resources.</li>
+              <li><strong>Efficiency</strong>: Programs written in assembly language are highly optimized for performance.</li>
+          </ul>
+          <h3>Example of Assembly Language</h3>
+          <pre>
+              <code>
+  section .data
+      msg db 'Hello, World!', 0
+  
+  section .text
+      global _start
+  
+  _start:
+      mov eax, 4      ; sys_write system call
+      mov ebx, 1      ; file descriptor (stdout)
+      mov ecx, msg    ; message to write
+      mov edx, 13     ; message length
+      int 0x80        ; interrupt to invoke kernel
+  
+      mov eax, 1      ; sys_exit system call
+      int 0x80        ; interrupt to invoke kernel
+              </code>
+          </pre>
+          <p>
+              This is an example of assembly language for the x86 architecture. It prints "Hello, World!" to the screen.
+          </p>
+      </section>
+  
+   
+      <section>
+          <h2 id="high-level">High-Level Language</h2>
+          <p>
+              <strong>High-level languages</strong> are programming languages that are closer to human language and further from machine language. They provide a high level of abstraction from hardware, making them easier to learn and use. Examples include Python, Java, C++, and JavaScript.
+          </p>
+          <h3>Characteristics of High-Level Languages</h3>
+          <ul>
+              <li><strong>Readability</strong>: Syntax is similar to human language.</li>
+              <li><strong>Portability</strong>: Programs can run on different platforms with minimal changes.</li>
+              <li><strong>Abstraction</strong>: Hides low-level details like memory management.</li>
+              <li><strong>Productivity</strong>: Faster development compared to low-level languages.</li>
+          </ul>
+          <h3>Example of High-Level Language</h3>
+          <pre>
+              <code>
+
+  print("Hello, World!")
+              </code>
+          </pre>
+          <p>
+              This is a simple Python program that prints "Hello, World!" to the console.
+          </p>
+      </section>
+  
+   
+      <section>
+          <h2 id="generations">Generations of Programming Languages</h2>
+          <p>
+              Programming languages are often categorized into generations based on their level of abstraction and features. Here's an overview of the third, fourth, and fifth generations:
+          </p>
+  
+          <h3>Third-Generation Languages (3GL)</h3>
+          <p>
+              <strong>3GLs</strong> are high-level languages that introduced structured programming and abstraction. They are closer to human language than assembly or machine language. Examples include C, C++, Java, and Python.
+          </p>
+          <ul>
+              <li><strong>Features</strong>: Structured programming, loops, conditionals, and functions.</li>
+              <li><strong>Example</strong>: C language.</li>
+          </ul>
+          <pre>
+              <code>
+  #include &ltstdio.h&gt
+  int main() {
+      printf("Hello, World!");
+      return 0;
+  }
+              </code>
+          </pre>
+  
+          <h3>Fourth-Generation Languages (4GL)</h3>
+          <p>
+              <strong>4GLs</strong> are designed for specific domains, such as database management or report generation. They are even closer to human language and often use declarative syntax. Examples include SQL, MATLAB, and RPG.
+          </p>
+          <ul>
+              <li><strong>Features</strong>: High-level abstraction, domain-specific, and declarative programming.</li>
+              <li><strong>Example</strong>: SQL for database queries.</li>
+          </ul>
+          <pre>
+              <code>
+  SELECT name, age FROM users WHERE age > 18;
+              </code>
+          </pre>
+  
+          <h3>Fifth-Generation Languages (5GL)</h3>
+          <p>
+              <strong>5GLs</strong> are focused on artificial intelligence and problem-solving. They allow programmers to define problems and let the language solve them. Examples include Prolog and Lisp.
+          </p>
+          <ul>
+              <li><strong>Features</strong>: AI-driven, problem-solving, and natural language processing.</li>
+              <li><strong>Example</strong>: Prolog for logic programming.</li>
+          </ul>
+          <pre>
+              <code>
+ 
+  parent(john, jim).
+  parent(john, ann).
+  sibling(X, Y) :- parent(Z, X), parent(Z, Y).
+              </code>
+          </pre>
+      </section>
+      <section>
+        <h2 id="compiler">Compiler</h2>
+        <p>
+            A <strong>compiler</strong> is a program that translates high-level programming language code (source code) into machine code (object code) in one go. The resulting machine code can be executed directly by the computer's CPU.
+        </p>
+        <h3>Characteristics of Compilers</h3>
+        <ul>
+            <li><strong>Translation</strong>: Converts the entire source code into machine code before execution.</li>
+            <li><strong>Speed</strong>: Compiled programs run faster because the translation is done beforehand.</li>
+            <li><strong>Portability</strong>: The compiled machine code is specific to the target platform.</li>
+            <li><strong>Error Detection</strong>: Detects errors during the compilation process.</li>
+        </ul>
+        <h3>Example of Compilation</h3>
+        <pre>
+            <code>
+
+#include &ltstdio.h&gt
+int main() {
+    printf("Hello, World!");
+    return 0;
+}
+
+// Compilation process
+$ gcc hello.c -o hello
+$ ./hello
+Hello, World!
+            </code>
+        </pre>
+        <p>
+            In this example, the C source code is compiled into an executable file using the <code>gcc</code> compiler.
+        </p>
+    </section>
+
+
+    <section>
+        <h2 id="interpreter">Interpreter</h2>
+        <p>
+            An <strong>interpreter</strong> is a program that executes high-level programming language code line by line, without translating it into machine code beforehand. It reads, translates, and executes the code simultaneously.
+        </p>
+        <h3>Characteristics of Interpreters</h3>
+        <ul>
+            <li><strong>Execution</strong>: Executes code line by line.</li>
+            <li><strong>Flexibility</strong>: Easier to debug and test code interactively.</li>
+            <li><strong>Speed</strong>: Slower than compiled programs because translation happens at runtime.</li>
+            <li><strong>Portability</strong>: Interpreted code can run on any platform with the appropriate interpreter.</li>
+        </ul>
+        <h3>Example of Interpretation</h3>
+        <pre>
+            <code>
+
+print("Hello, World!")
+
+# Interpretation process
+$ python hello.py
+Hello, World!
+            </code>
+        </pre>
+        <p>
+            In this example, the Python interpreter reads and executes the code line by line.
+        </p>
+    </section>
+
+
+    <section>
+        <h2 id="assembler">Assembler</h2>
+        <p>
+            An <strong>assembler</strong> is a program that translates assembly-level language code (mnemonics) into machine code. Assembly language is a low-level language that is closely related to machine language but uses human-readable mnemonics.
+        </p>
+        <h3>Characteristics of Assemblers</h3>
+        <ul>
+            <li><strong>Translation</strong>: Converts assembly code into machine code.</li>
+            <li><strong>Hardware-Specific</strong>: Assembly code is specific to the CPU architecture.</li>
+            <li><strong>Efficiency</strong>: Produces highly optimized machine code.</li>
+            <li><strong>Low-Level</strong>: Provides direct control over hardware resources.</li>
+        </ul>
+        <h3>Example of Assembly and Assembler</h3>
+        <pre>
+            <code>
+; Assembly code (x86)
+section .data
+    msg db 'Hello, World!', 0
+
+section .text
+    global _start
+
+_start:
+    mov eax, 4      ; sys_write system call
+    mov ebx, 1      ; file descriptor (stdout)
+    mov ecx, msg    ; message to write
+    mov edx, 13     ; message length
+    int 0x80        ; interrupt to invoke kernel
+
+    mov eax, 1      ; sys_exit system call
+    int 0x80        ; interrupt to invoke kernel
+
+; Assembling process
+$ nasm -f elf64 hello.asm -o hello.o
+$ ld hello.o -o hello
+$ ./hello
+Hello, World!
+            </code>
+        </pre>
+        <p>
+            In this example, the assembly code is translated into machine code using the <code>nasm</code> assembler.
+        </p>
+    </section>
+
+
+    <section>
+        <h2>Comparison: Compiler vs Interpreter</h2>
+        <img src="https://www.theknowledgeacademy.com/_files/images/Differences_Between_Compiler_and_Interpreter.png" alt="Compiler vs Interpreter vs Assembler">
+    </section>
+    <section>
+      <h2 id="syntax-error">Syntax Errors</h2>
+      <p>
+          <strong>Syntax errors</strong> occur when the code violates the rules of the programming language. These errors are detected by the compiler or interpreter during the parsing phase, before the code is executed. Syntax errors prevent the program from running.
+      </p>
+      <h3>Characteristics of Syntax Errors</h3>
+      <ul>
+          <li><strong>Detection</strong>: Caught during compilation or interpretation.</li>
+          <li><strong>Cause</strong>: Incorrect use of language syntax (e.g., missing semicolons, mismatched brackets).</li>
+          <li><strong>Impact</strong>: Prevents the program from running.</li>
+      </ul>
+      <h3>Example of Syntax Error</h3>
+      <pre>
+          <code>
+# Python code with a syntax error
+print("Hello, World!"  # Missing closing parenthesis
+          </code>
+      </pre>
+      <p>
+          In this example, the Python interpreter will raise a <code>SyntaxError</code> because the closing parenthesis is missing.
+      </p>
+  </section>
+
+  
+  <section>
+      <h2 id="semantic-error">Semantic Errors</h2>
+      <p>
+          <strong>Semantic errors</strong> occur when the code is syntactically correct but does not behave as intended. These errors are related to the logic of the program and are often harder to detect because the code runs without crashing but produces incorrect results.
+      </p>
+      <h3>Characteristics of Semantic Errors</h3>
+      <ul>
+          <li><strong>Detection</strong>: Not caught by the compiler or interpreter; requires testing and debugging.</li>
+          <li><strong>Cause</strong>: Incorrect logic or misuse of language constructs.</li>
+          <li><strong>Impact</strong>: The program runs but produces incorrect output.</li>
+      </ul>
+      <h3>Example of Semantic Error</h3>
+      <pre>
+          <code>
+# Python code with a semantic error
+a = 5
+b = 10
+sum = a - b  # Logical error: should be a + b
+print("Sum:", sum)
+          </code>
+      </pre>
+      <p>
+          In this example, the program runs without errors but produces the wrong result because the logic for calculating the sum is incorrect.
+      </p>
+  </section>
+
+
+  <section>
+      <h2 id="runtime-error">Runtime Errors</h2>
+      <p>
+          <strong>Runtime errors</strong> occur during the execution of a program. These errors are caused by unexpected conditions, such as dividing by zero, accessing an invalid memory location, or trying to open a file that does not exist. Runtime errors cause the program to crash or terminate abruptly.
+      </p>
+      <h3>Characteristics of Runtime Errors</h3>
+      <ul>
+          <li><strong>Detection</strong>: Occur during program execution.</li>
+          <li><strong>Cause</strong>: Invalid operations or unexpected conditions.</li>
+          <li><strong>Impact</strong>: Causes the program to crash or behave unpredictably.</li>
+      </ul>
+      <h3>Example of Runtime Error</h3>
+      <pre>
+          <code>
+# Python code with a runtime error
+a = 10
+b = 0
+result = a / b  # Division by zero
+print("Result:", result)
+          </code>
+      </pre>
+      <p>
+          In this example, the program crashes at runtime because it attempts to divide by zero, which is not allowed.
+      </p>
+  </section>
+
+  
+  </section>
+  <section>
+    <h2 id="control-structures">What are Control Structures?</h2>
+    <p>
+        <strong>Control structures</strong> are fundamental building blocks in programming that determine the flow of execution in a program. They allow developers to control how and when certain blocks of code are executed. There are three main types of control structures:
+    </p>
+    <ul>
+        <li><strong>Sequence</strong>: Executing statements in a linear order.</li>
+        <li><strong>Selection</strong>: Making decisions based on conditions.</li>
+        <li><strong>Iteration</strong>: Repeating a block of code multiple times.</li>
+    </ul>
+</section>
+
+<section>
+    <h2 id="sequence">Sequence</h2>
+    <p>
+        <strong>Sequence</strong> is the simplest control structure. It refers to the linear execution of statements in the order they are written. Each statement is executed one after the other, from top to bottom.
+    </p>
+    <h3>Characteristics of Sequence</h3>
+    <ul>
+        <li><strong>Order</strong>: Statements are executed in the order they appear.</li>
+        <li><strong>No Branching</strong>: No conditions or loops are involved.</li>
+        <li><strong>Basic Flow</strong>: The default flow of execution in a program.</li>
+    </ul>
+    <h3>Example of Sequence</h3>
+    <pre>
+        <code>
+# Python example of sequence
+print("Step 1: Start")
+print("Step 2: Perform action")
+print("Step 3: End")
+        </code>
+    </pre>
+    <p>
+        In this example, the statements are executed in the order they are written, producing the following output:
+    </p>
+    <pre>
+        <code>
+Step 1: Start
+Step 2: Perform action
+Step 3: End
+        </code>
+    </pre>
+</section>
+
+<section>
+    <h2 id="selection">Selection</h2>
+    <p>
+        <strong>Selection</strong> (also called decision-making) allows a program to choose between different paths of execution based on certain conditions. Common selection structures include <code>if</code>, <code>else</code>, and <code>switch</code> statements.
+    </p>
+    <h3>Characteristics of Selection</h3>
+    <ul>
+        <li><strong>Condition-Based</strong>: Executes different blocks of code based on conditions.</li>
+        <li><strong>Branching</strong>: Creates multiple paths of execution.</li>
+        <li><strong>Flexibility</strong>: Allows programs to make decisions dynamically.</li>
+    </ul>
+    <h3>Example of Selection</h3>
+    <pre>
+        <code>
+# Python example of selection
+age = 18
+if age >= 18:
+print("You are an adult.")
+else:
+print("You are a minor.")
+        </code>
+    </pre>
+    <p>
+        In this example, the program checks the value of <code>age</code> and prints a message based on the condition.
+    </p>
+</section>
+
+<section>
+    <h2 id="iteration">Iteration</h2>
+    <p>
+        <strong>Iteration</strong> (also called looping) allows a program to repeat a block of code multiple times. Common iteration structures include <code>for</code> loops, <code>while</code> loops, and <code>do-while</code> loops.
+    </p>
+    <h3>Characteristics of Iteration</h3>
+    <ul>
+        <li><strong>Repetition</strong>: Executes a block of code multiple times.</li>
+        <li><strong>Control</strong>: Can be controlled by conditions or counters.</li>
+        <li><strong>Efficiency</strong>: Reduces code duplication by repeating tasks.</li>
+    </ul>
+    <h3>Example of Iteration</h3>
+    <pre>
+        <code>
+# Python example of iteration
+for i in range(5):
+print("Iteration:", i)
+        </code>
+    </pre>
+    <p>
+        In this example, the program prints "Iteration: X" five times, where X is the current iteration number.
+    </p>
+</section>
+<h1 id="algorithm">Algorithm</h1>
+<p>
+    An <strong>algorithm</strong> is a step-by-step procedure or set of rules to solve a problem or perform a task. It is a well-defined sequence of instructions that takes an input, processes it, and produces an output.
+</p>
+<h3>Characteristics of an Algorithm</h3>
+<ul>
+    <li><strong>Input</strong>: Takes zero or more inputs.</li>
+    <li><strong>Output</strong>: Produces at least one output.</li>
+    <li><strong>Definiteness</strong>: Each step is clear and unambiguous.</li>
+    <li><strong>Finiteness</strong>: Terminates after a finite number of steps.</li>
+    <li><strong>Effectiveness</strong>: Each step is simple and feasible.</li>
+</ul>
+<h3>Example of an Algorithm</h3>
+<pre>
+    <code>
+Algorithm: Add Two Numbers
+1. Start
+2. Read two numbers, A and B
+3. Compute Sum = A + B
+4. Display Sum
+5. Stop
+    </code>
+</pre>
+
+<h1 id="flowchart">Flowchart</h1>
+<p>
+    A <strong>flowchart</strong> is a graphical representation of an algorithm. It uses symbols like rectangles, diamonds, and arrows to represent steps, decisions, and flow of control.
+</p>
+<h3>Common Flowchart Symbols</h3>
+<ul>
+    <li><strong>Oval</strong>: Start/End</li>
+    <li><strong>Rectangle</strong>: Process/Step</li>
+    <li><strong>Diamond</strong>: Decision/Condition</li>
+    <li><strong>Arrow</strong>: Flow of Control</li>
+</ul>
+<h3>Example of a Flowchart</h3>
+
+<img src="https://www.breezetree.com/images/basic-flowchart.png" alt="Flowchart">
+
+
+<h1 id="pseudocode">Pseudocode</h1>
+<p>
+    <strong>Pseudocode</strong> is an informal way of writing algorithms. It uses a mix of natural language and programming constructs to describe the logic of a program.
+</p>
+<h3>Characteristics of Pseudocode</h3>
+<ul>
+    <li><strong>Readability</strong>: Easy to understand for both programmers and non-programmers.</li>
+    <li><strong>Flexibility</strong>: Not tied to any specific programming language.</li>
+    <li><strong>Structure</strong>: Uses indentation and keywords like <code>IF</code>, <code>ELSE</code>, <code>FOR</code>, etc.</li>
+</ul>
+<h3>Example of Pseudocode</h3>
+<pre>
+    <code>
+IF A > B THEN
+PRINT "A is greater than B"
+ELSE
+PRINT "B is greater than or equal to A"
+ENDIF
+    </code>
+</pre>
+
+
+<h1 id="absolute-binary">Absolute Binary</h1>
+<p>
+    <strong>Absolute binary</strong> is a binary representation of data where each bit directly corresponds to a value. It is the most basic form of binary representation used in computers.
+</p>
+<h3>Characteristics of Absolute Binary</h3>
+<ul>
+    <li><strong>Direct Representation</strong>: Each bit represents a power of 2.</li>
+    <li><strong>No Encoding</strong>: No additional encoding or conversion is applied.</li>
+    <li><strong>Efficiency</strong>: Efficient for arithmetic operations.</li>
+</ul>
+<h3>Example of Absolute Binary</h3>
+<pre>
+    <code>
+Decimal: 5
+Binary:  0101
+    </code>
+</pre>
+
+
+<h1 id="bcd">BCD (Binary-Coded Decimal)</h1>
+<p>
+    <strong>BCD</strong> (Binary-Coded Decimal) is a binary representation of decimal numbers where each digit is encoded separately in binary.
+</p>
+<h3>Characteristics of BCD</h3>
+<ul>
+    <li><strong>Digit-by-Digit Encoding</strong>: Each decimal digit is represented by 4 bits.</li>
+    <li><strong>Human-Readable</strong>: Easier to convert to and from decimal.</li>
+    <li><strong>Inefficiency</strong>: Uses more bits than absolute binary.</li>
+</ul>
+<h3>Example of BCD</h3>
+<pre>
+    <code>
+Decimal: 12
+BCD:    0001 0010
+    </code>
+</pre>
+
+<h1 id="ascii">ASCII</h1>
+<p>
+    <strong>ASCII</strong> (American Standard Code for Information Interchange) is a character encoding standard that represents text in computers. It uses 7 bits to represent 128 characters, including letters, digits, and control characters.
+</p>
+<h3>Characteristics of ASCII</h3>
+<ul>
+    <li><strong>7-Bit Encoding</strong>: Represents 128 characters.</li>
+    <li><strong>Widely Used</strong>: Standard for text representation in computers.</li>
+    <li><strong>Limited</strong>: Cannot represent non-English characters.</li>
+</ul>
+<h3>Example of ASCII</h3>
+<pre>
+    <code>
+Character: A
+ASCII:    65 (01000001 in binary)
+    </code>
+</pre>
+<img src="https://linuxhandbook.com/content/images/2023/01/1.png" alt="ASCII Table">
+
+<h1 id="unicode">Unicode</h1>
+<p>
+    <strong>Unicode</strong> is a universal character encoding standard that supports text in all languages and scripts. It uses variable-length encoding (UTF-8, UTF-16, etc.) to represent over 1 million characters.
+</p>
+<h3>Characteristics of Unicode</h3>
+<ul>
+    <li><strong>Universal</strong>: Supports all languages and scripts.</li>
+    <li><strong>Variable-Length Encoding</strong>: Uses UTF-8, UTF-16, etc.</li>
+    <li><strong>Backward Compatibility</strong>: Compatible with ASCII.</li>
+</ul>
+<h3>Example of Unicode</h3>
+<pre>
+    <code>
+Character: 😊 (Smiling Face)
+Unicode:  U+1F60A
+UTF-8:    F0 9F 98 8A
+    </code>
+</pre>
+
+</div>
+
       </div>
-    </div>
+    
   </body>
 </html>

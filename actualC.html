@@ -1,0 +1,331 @@
+<html>
+  <head>
+    <title>Programming in C</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="main">
+      <div id="TOC">
+        <h2>Topics</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#intro-c">Introduction to C</a></li>
+          <li><a href="#features-c">Features of C</a></li>
+          <li><a href="#structure-c">Structure of a C Program</a></li>
+          <li><a href="#preprocessors">C Preprocessors and Header Files</a></li>
+          <li><a href="#characters-c">Characters Used in C</a></li>
+          <li><a href="#comments">Comments in C</a></li>
+          <li><a href="#identifiers">Identifiers in C</a></li>
+          <li><a href="#keywords">Keywords in C</a></li>
+          <li><a href="#tokens">Tokens in C</a></li>
+          <li><a href="#data-types">Data Types in C</a></li>
+          <li><a href="#constants-variables">Constants and Variables</a></li>
+          <li><a href="#type-specifiers">Type Specifiers</a></li>
+          <li><a href="#statements">Simple and Compound Statements</a></li>
+        </ul>
+      </div>
+
+      <div id="details">
+        <h1 id="intro-c">Introduction to C</h1>
+        <p>
+          <strong>C</strong> is a general-purpose, procedural programming
+          language developed by Dennis Ritchie in 1972 at Bell Labs. It is one
+          of the most widely used programming languages and serves as the
+          foundation for many modern languages like C++, Java, and Python.
+        </p>
+        <p>
+          C is known for its simplicity, efficiency, and flexibility. It is used
+          for system programming, embedded systems, game development, and more.
+        </p>
+
+        <h1 id="features-c">Features of C</h1>
+        <p>
+          C has several features that make it a powerful and popular programming
+          language:
+        </p>
+        <ul>
+          <li>
+            <strong>Procedural Language</strong>: Follows a step-by-step
+            procedural approach.
+          </li>
+          <li>
+            <strong>Portability</strong>: Programs written in C can run on
+            different platforms with minimal changes.
+          </li>
+          <li>
+            <strong>Efficiency</strong>: Provides low-level access to memory and
+            hardware.
+          </li>
+          <li>
+            <strong>Modularity</strong>: Supports functions and libraries for
+            code reusability.
+          </li>
+          <li>
+            <strong>Extensibility</strong>: Allows the addition of new features
+            and libraries.
+          </li>
+        </ul>
+
+        <h1 id="structure-c">Structure of a C Program</h1>
+        <p>A C program typically consists of the following components:</p>
+        <pre>
+                <code>
+#include &ltstdio.h&gt // Preprocessor directive
+
+int main() { // Main function
+    printf("Hello, World!"); // Statement
+    return 0; // Return statement
+}
+                </code>
+            </pre>
+        <h3>Components of a C Program</h3>
+        <ul>
+          <li>
+            <strong>Preprocessor Directives</strong>: Includes header files
+            (e.g., <code>#include &ltstdio.h&gt</code>).
+          </li>
+          <li>
+            <strong>Main Function</strong>: Entry point of the program (<code
+              >int main()</code
+            >).
+          </li>
+          <li>
+            <strong>Statements</strong>: Instructions to perform tasks (e.g.,
+            <code>printf("Hello, World!");</code>).
+          </li>
+          <li>
+            <strong>Return Statement</strong>: Indicates the end of the program
+            (<code>return 0;</code>).
+          </li>
+        </ul>
+
+        <h1 id="preprocessors">C Preprocessors and Header Files</h1>
+        <p>
+          <strong>Preprocessors</strong> are directives that instruct the
+          compiler to preprocess the source code before compilation. They begin
+          with a <code>#</code> symbol.
+        </p>
+        <h3>Common Preprocessor Directives</h3>
+        <ul>
+          <li>
+            <strong>#include</strong>: Includes header files (e.g.,
+            <code>#include &ltstdio.h&gt</code>).
+          </li>
+        </ul>
+        <h3>Header Files</h3>
+        <p>
+          Header files (e.g., <code>stdio.h</code>) contain function
+          declarations and macros. They are included using the
+          <code>#include</code> directive.
+        </p>
+
+        <h1 id="characters-c">Characters Used in C</h1>
+        <p>C uses the following types of characters:</p>
+        <ul>
+          <li><strong>Letters</strong>: A-Z, a-z</li>
+          <li><strong>Digits</strong>: 0-9</li>
+          <li>
+            <strong>Special Characters</strong>:
+            <code
+              >! @ # $ % ^ & * ( ) _ + - = { } [ ] | \ : ; " ' < > , . ? /</code
+            >
+          </li>
+          <li><strong>Whitespace</strong>: Spaces, tabs, and newlines.</li>
+        </ul>
+
+        <h1 id="comments">Comments in C</h1>
+        <p>
+          <strong>Comments</strong> are used to explain code and make it more
+          readable. They are ignored by the compiler.
+        </p>
+        <h3>Types of Comments</h3>
+        <ul>
+          <li>
+            <strong>Single-Line Comments</strong>: Start with <code>//</code>.
+          </li>
+          <pre>
+                    <code>
+// This is a single-line comment
+                    </code>
+                </pre>
+          <li>
+            <strong>Multi-Line Comments</strong>: Enclosed in
+            <code>/* ... */</code>.
+          </li>
+          <pre>
+                    <code>
+/* This is a
+   multi-line comment */
+                    </code>
+                </pre>
+        </ul>
+
+        <h1 id="identifiers">Identifiers in C</h1>
+        <p>
+          <strong>Identifiers</strong> are names given to variables, functions,
+          arrays, etc. They must follow these rules:
+        </p>
+        <ul>
+          <li>
+            Can contain letters, digits, and underscores (<code>_</code>).
+          </li>
+          <li>Must begin with a letter or underscore.</li>
+          <li>Cannot be a keyword.</li>
+          <li>Are case-sensitive.</li>
+        </ul>
+        <h3>Example of Identifiers</h3>
+        <pre>
+                <code>
+int age; // "age" is an identifier
+float salary; // "salary" is an identifier
+                </code>
+            </pre>
+
+        <h1 id="keywords">Keywords in C</h1>
+        <p>
+          <strong>Keywords</strong> are reserved words in C that have special
+          meanings. They cannot be used as identifiers.
+        </p>
+        <h3>Common Keywords</h3>
+        <pre>
+                <code>
+int, float, char, if, else, for, while, return, void, struct, etc.
+                </code>
+            </pre>
+        <img
+          src="https://preview.redd.it/some-fixed-keywords-in-c-programming-language-v0-ypx9ul7yzt2b1.png?auto=webp&s=731816ad00aed4cc796c4bd2d1f6791f58cf6bf0"
+          alt="Keywords in C"
+        />
+        <h1 id="tokens">Tokens in C</h1>
+        <p>
+          All the things written in code are tokens.
+          <strong>Tokens</strong> are the smallest individual units in a C
+          program. They include:
+        </p>
+        <ul>
+          <li>
+            <strong>Keywords</strong>: Reserved words (e.g., <code>int</code>,
+            <code>return</code>).
+          </li>
+          <li>
+            <strong>Identifiers</strong>: Names of variables, functions, etc.
+          </li>
+          <li>
+            <strong>Constants</strong>: Fixed values (e.g., <code>10</code>,
+            <code>3.14</code>).
+          </li>
+          <li>
+            <strong>Strings</strong>: Sequence of characters (e.g.,
+            <code>"Hello"</code>).
+          </li>
+          <li>
+            <strong>Operators</strong>: Symbols for operations (e.g.,
+            <code>+</code>, <code>-</code>).
+          </li>
+          <li>
+            <strong>Special Symbols</strong>: Punctuation marks (e.g.,
+            <code>;</code>, <code>{</code>).
+          </li>
+        </ul>
+        <h1 id="data-types">Data Types in C</h1>
+        <p>
+          <strong>Data types</strong> define the type of data a variable can
+          hold. C supports the following basic data types:
+        </p>
+        <ul>
+          <li>
+            <strong>int</strong>: Integer values (e.g.,
+            <code>int age = 25;</code>).
+          </li>
+          <li>
+            <strong>float</strong>: Floating-point numbers (e.g.,
+            <code>float pi = 3.14;</code>).
+          </li>
+          <li>
+            <strong>char</strong>: Single characters (e.g.,
+            <code>char grade = 'A';</code>).
+          </li>
+          <li>
+            <strong>double</strong>: Double-precision floating-point numbers
+            (e.g., <code>double salary = 45000.50;</code>).
+          </li>
+          <li>
+            <strong>void</strong>: Represents no value (used in functions and
+            pointers).
+          </li>
+        </ul>
+
+        <h1 id="constants-variables">Constants and Variables</h1>
+        <p>
+          <strong>Variables</strong> are used to store data that can change
+          during program execution. <strong>Constants</strong> are fixed values
+          that cannot be changed.
+        </p>
+        <h3>Variables</h3>
+        <pre>
+                <code>
+int age = 25; // Variable declaration and initialization
+age = 30;    // Value can be changed
+                </code>
+            </pre>
+        <h3>Constants</h3>
+        <pre>
+                <code>
+const float PI = 3.14; // Constant declaration
+// PI = 3.15; // Error: Cannot change a constant
+                </code>
+            </pre>
+
+        <h1 id="type-specifiers">Type Specifiers</h1>
+        <p>
+          <strong>Type specifiers</strong> modify the basic data types to
+          provide more control over their size and behavior. Common type
+          specifiers include:
+        </p>
+        <ul>
+          <li>
+            <strong>short</strong>: Reduces the size of <code>int</code> (e.g.,
+            <code>short int x;</code>).
+          </li>
+          <li>
+            <strong>long</strong>: Increases the size of <code>int</code> or
+            <code>double</code> (e.g., <code>long int y;</code>).
+          </li>
+          <li>
+            <strong>signed</strong>: Allows positive and negative values
+            (default).
+          </li>
+          <li>
+            <strong>unsigned</strong>: Allows only positive values (e.g.,
+            <code>unsigned int z;</code>).
+          </li>
+        </ul>
+
+        <h1 id="statements">Simple and Compound Statements</h1>
+        <p>
+          <strong>Statements</strong> are instructions that perform actions in a
+          program.
+        </p>
+        <h3>Simple Statements</h3>
+        <p>A single instruction ending with a semicolon (<code>;</code>).</p>
+        <pre>
+                <code>
+int x = 10; // Simple statement
+                </code>
+            </pre>
+        <h3>Compound Statements</h3>
+        <p>
+          A block of statements enclosed in curly braces (<code>{ }</code>).
+        </p>
+        <pre>
+                <code>
+if (x > 5) { // Compound statement
+    printf("x is greater than 5");
+    x = x + 1;
+}
+                </code>
+            </pre>
+      </div>
+    </div>
+  </body>
+</html>
