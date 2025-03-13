@@ -66,10 +66,28 @@ a {
   color: white;
 }
 #TOC ul li:hover {
-  border-left: 6px solid white;
+  border: 2px solid white;
 }
 code {
   padding: 2px 5px;
   border-radius: 3px;
   font-family: "Courier New", monospace;
+}
+#TOC ul li:active {
+  border-left: 6px solid #3498db;
+}
+#TOC ul li {
+  text-align: left;
+}
+#TOC ul li {
+  padding: 10px;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
+.output {
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
 }

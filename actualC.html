@@ -22,6 +22,22 @@
           <li><a href="#constants-variables">Constants and Variables</a></li>
           <li><a href="#type-specifiers">Type Specifiers</a></li>
           <li><a href="#statements">Simple and Compound Statements</a></li>
+          <li><a href="#arithmetic">Arithmetic Operators</a></li>
+          <li><a href="#relational">Relational Operators</a></li>
+          <li><a href="#logical">Logical Operators</a></li>
+          <li><a href="#assignment">Assignment Operators</a></li>
+          <li><a href="#unary">Unary Operators</a></li>
+          <li><a href="#conditional">Conditional Operator</a></li>
+          <li><a href="#io">I/O Functions</a></li>
+          <li><a href="#if">if Statement</a></li>
+          <li><a href="#ifelse">if-else Statement</a></li>
+          <li><a href="#elseif">if-else if-else Statement</a></li>
+          <li><a href="#nested">Nested if Statement</a></li>
+          <li><a href="#switch">Switch Statement</a></li>
+          <li><a href="#iteration">Iteration Control Statements</a></li>
+          <li><a href="#array">Array Definition and Types</a></li>
+          <li><a href="#matrix">Matrix Addition and Subtraction</a></li>
+          <li><a href="#string">String Library Functions</a></li>
         </ul>
       </div>
 
@@ -325,6 +341,375 @@ if (x > 5) { // Compound statement
 }
                 </code>
             </pre>
+        <h1 id="arithmetic">Arithmetic Operators</h1>
+        <p>
+          <strong>Arithmetic operators</strong> are used to perform mathematical
+          operations like addition, subtraction, multiplication, division, and
+          modulus.
+        </p>
+        <h3>Common Arithmetic Operators</h3>
+        <ul>
+          <li><code>+</code>: Addition</li>
+          <li><code>-</code>: Subtraction</li>
+          <li><code>*</code>: Multiplication</li>
+          <li><code>/</code>: Division</li>
+          <li><code>%</code>: Modulus (remainder)</li>
+        </ul>
+        <h3>Example</h3>
+        <pre>
+                <code>
+int a = 10, b = 3;
+int sum = a + b; // 13
+int difference = a - b; // 7
+int product = a * b; // 30
+int quotient = a / b; // 3
+int remainder = a % b; // 1
+                </code>
+            </pre>
+
+        <h1 id="relational">Relational Operators</h1>
+        <p>
+          <strong>Relational operators</strong> are used to compare two values.
+          They return a boolean result (<code>1</code> for true,
+          <code>0</code> for false).
+        </p>
+        <h3>Common Relational Operators</h3>
+        <ul>
+          <li><code>==</code>: Equal to</li>
+          <li><code>!=</code>: Not equal to</li>
+          <li><code>></code>: Greater than</li>
+          <li><code><</code>: Less than</li>
+          <li><code>>=</code>: Greater than or equal to</li>
+          <li><code><=</code>: Less than or equal to</li>
+        </ul>
+        <h3>Example</h3>
+        <pre>
+                <code>
+int a = 10, b = 20;
+int result1 = (a == b); // 0 (false)
+int result2 = (a < b);  // 1 (true)
+                </code>
+            </pre>
+
+        <h1 id="logical">Logical Operators</h1>
+        <p>
+          <strong>Logical operators</strong> are used to combine multiple
+          conditions. They return a boolean result (<code>1</code> for true,
+          <code>0</code> for false).
+        </p>
+        <h3>Common Logical Operators</h3>
+        <ul>
+          <li><code>&&</code>: Logical AND</li>
+          <li><code>||</code>: Logical OR</li>
+          <li><code>!</code>: Logical NOT</li>
+        </ul>
+        <h3>Example</h3>
+        <pre>
+                <code>
+int a = 1, b = 0;
+int result1 = (a && b); // 0 (false)
+int result2 = (a || b); // 1 (true)
+int result3 = !a;       // 0 (false)
+                </code>
+            </pre>
+
+        <h1 id="assignment">Assignment Operators</h1>
+        <p>
+          <strong>Assignment operators</strong> are used to assign values to
+          variables. They can also perform operations while assigning.
+        </p>
+        <h3>Common Assignment Operators</h3>
+        <ul>
+          <li><code>=</code>: Simple assignment</li>
+          <li><code>+=</code>: Add and assign</li>
+          <li><code>-=</code>: Subtract and assign</li>
+          <li><code>*=</code>: Multiply and assign</li>
+          <li><code>/=</code>: Divide and assign</li>
+          <li><code>%=</code>: Modulus and assign</li>
+        </ul>
+        <h3>Example</h3>
+        <pre>
+                <code>
+int a = 10;
+a += 5; // a = 15
+a -= 3; // a = 12
+a *= 2; // a = 24
+a /= 4; // a = 6
+a %= 5; // a = 1
+                </code>
+            </pre>
+
+        <h1 id="unary">Unary Operators</h1>
+        <p>
+          <strong>Unary operators</strong> operate on a single operand. They are
+          used to perform operations like increment, decrement, and negation.
+        </p>
+        <h3>Common Unary Operators</h3>
+        <ul>
+          <li><code>++</code>: Increment</li>
+          <li><code>--</code>: Decrement</li>
+          <li><code>-</code>: Negation</li>
+          <li><code>!</code>: Logical NOT</li>
+        </ul>
+        <h3>Example</h3>
+        <pre>
+                <code>
+int a = 5;
+a++; // a = 6
+a--; // a = 5
+int b = -a; // b = -5
+int c = !a; // c = 0 (false)
+                </code>
+            </pre>
+
+        <h1 id="conditional">Conditional Operator</h1>
+        <p>
+          The <strong>conditional operator</strong> (<code>? :</code>) is a
+          ternary operator used for decision-making. It evaluates a condition
+          and returns one of two values based on the result.
+        </p>
+        <h3>Syntax</h3>
+        <pre>
+                <code>
+condition ? expression1 : expression2;
+                </code>
+            </pre>
+        <h3>Example</h3>
+        <pre>
+                <code>
+                  int a = 10, b = 20;
+                  int max = (a > b) ? a : b;
+                  printf("%d is greater\n", max);
+                  
+                </code>
+            </pre>
+        <h1 id="io">I/O Functions</h1>
+        <p>
+          Input and output functions allow interaction with the user. Common
+          functions are <code>printf</code> for output and
+          <code>scanf</code> for input.
+        </p>
+        <h3>Example</h3>
+        <pre>
+            <code>
+#include &lt;stdio.h&gt;
+
+int main() {
+    int num;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    printf("You entered: %d", num);
+    return 0;
+}
+            </code>
+        </pre>
+
+        <h1 id="if">if Statement</h1>
+        <p>
+          The <code>if</code> statement executes a block of code if a specified
+          condition is true.
+        </p>
+        <h3>Example</h3>
+        <pre>
+            <code>
+int a = 10;
+if (a > 5) {
+    printf("a is greater than 5\n");
+}
+            </code>
+        </pre>
+
+        <h1 id="ifelse">if-else Statement</h1>
+        <p>
+          The <code>if-else</code> statement allows for one block of code to
+          execute if the condition is true and another if it is false.
+        </p>
+        <h3>Example</h3>
+        <pre>
+            <code>
+int a = 10;
+if (a > 15) {
+    printf("a is greater than 15\n");
+} else {
+    printf("a is not greater than 15\n");
+}
+            </code>
+        </pre>
+
+        <h1 id="elseif">if-else if-else Statement</h1>
+        <p>
+          This statement allows multiple conditions to be checked sequentially.
+        </p>
+        <h3>Example</h3>
+        <pre>
+            <code>
+int a = 10;
+if (a > 20) {
+    printf("a is greater than 20\n");
+} else if (a > 10) {
+    printf("a is greater than 10 but not 20\n");
+} else {
+    printf("a is 10 or less\n");
+}
+            </code>
+        </pre>
+
+        <h1 id="nested">Nested if Statement</h1>
+        <p>
+          A nested <code>if</code> statement allows an <code>if</code> statement
+          <code>if</code>. It works like and operator. inside another
+        </p>
+        <h3>Example</h3>
+        <pre>
+            <code>
+int a = 10, b = 20;
+if (a < 20) {
+    if (b > 15) {
+        printf("Both conditions are true\n");
+    }
+}
+            </code>
+        </pre>
+
+        <h1 id="switch">Switch Statement</h1>
+        <p>
+          The <code>switch</code> statement allows multiple cases to be checked
+          based on an expression. It also takes a default value.
+        </p>
+        <h3>Example</h3>
+        <pre>
+            <code>
+int day = 3;
+switch (day) {
+    case 1:
+        printf("Monday\n");
+        break;
+    case 2:
+        printf("Tuesday\n");
+        break;
+    case 3:
+        printf("Wednesday\n");
+        break;
+    default:
+        printf("Other day\n");
+}
+            </code>
+        </pre>
+        <h1 id="iteration">Iteration Control Statements</h1>
+        <p>Loops are used to execute a block of code repeatedly.</p>
+        <h3>While Loop</h3>
+        <pre>
+            <code>
+int i = 1;
+while (i <= 5) {
+    printf("%d\n", i);
+    i++;
+}
+            </code>
+        </pre>
+        <div class="output">1 2 3 4 5</div>
+
+        <h3>Do-While Loop</h3>
+        <pre>
+            <code>
+int i = 1;
+do {
+    printf("%d\n", i);
+    i++;
+} while (i <= 5);
+            </code>
+        </pre>
+        <div class="output">1 2 3 4 5</div>
+
+        <h3>For Loop</h3>
+        <pre>
+            <code>
+for (int i = 1; i <= 5; i++) {
+    printf("%d\n", i);
+}
+            </code>
+        </pre>
+        <div class="output">1 2 3 4 5</div>
+
+     
+        <h1 id="array">Array Definition and Types</h1>
+        <p>Arrays are used to store multiple values in a single variable.</p>
+        <h3>1D Array</h3>
+        <pre>
+            <code>
+int arr[5] = {1, 2, 3, 4, 5};
+            </code>
+        </pre>
+        <div class="output">1 2 3 4 5</div>
+
+        <h3>2D Array</h3>
+        <pre>
+            <code>
+int matrix[2][2] = {{1, 2}, {3, 4}};
+            </code>
+        </pre>
+        <div class="output">1 2<br>3 4</div>
+
+        
+        <h1 id="matrix">Matrix Addition and Subtraction</h1>
+        <p>Operations on two matrices.</p>
+        <h3>Matrix Addition</h3>
+        <pre>
+            <code>
+int A[2][2] = {{1, 2}, {3, 4}};
+int B[2][2] = {{5, 6}, {7, 8}};
+int C[2][2];
+
+for (int i = 0; i < 2; i++) {
+    for (int j = 0; j < 2; j++) {
+        C[i][j] = A[i][j] + B[i][j];
+        printf("%d ", C[i][j]);
+    }
+    printf("\n");
+}
+            </code>
+        </pre>
+        <div class="output">6 8<br>10 12</div>
+
+        <h3>Matrix Subtraction</h3>
+        <pre>
+            <code>
+for (int i = 0; i < 2; i++) {
+    for (int j = 0; j < 2; j++) {
+        C[i][j] = A[i][j] - B[i][j];
+        printf("%d ", C[i][j]);
+    }
+    printf("\n");
+}
+            </code>
+        </pre>
+        <div class="output">-4 -4<br>-4 -4</div>
+        <h1 id="string">String Library Functions</h1>
+        <p>Common string manipulation functions from <code>string.h</code>.</p>
+        <h3>Examples</h3>
+<pre>
+            <code>
+        #include <string.h>
+          #include <stdio.h>
+          
+          char str1[20] = "Hello";
+          char str2[20] = "World";
+          
+          printf("%lu\n", strlen(str1));
+          strcat(str1, str2);
+          printf("%s\n", str1);
+          printf("%d\n", strcmp("Hello", "Hello"));
+          strcpy(str1, str2);
+          printf("%s\n", str1);
+          strrev(str2);
+          printf("%s\n", str2);
+          strlwr(str2);
+          printf("%s\n", str2);
+          strupr(str2);
+          printf("%s\n", str2);
+                      </code>
+                  </pre>
+                  <div class="output">5<br>HelloWorld<br>0<br>World<br>dlroW<br>dlrow<br>DLROW</div>
       </div>
     </div>
   </body>
