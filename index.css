@@ -91,3 +91,9 @@ code {
   border-radius: 5px;
   margin-top: 10px;
 }
+.output h2,
+.output h1,
+.output td,
+.output th {
+  color: #fff;
+}

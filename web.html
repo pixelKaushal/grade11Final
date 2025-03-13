@@ -1,0 +1,489 @@
+<html>
+  <head>
+    <title>Web Technology-I</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <div id="main">
+      <div id="TOC">
+        <h2>Topics</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#web-dev-intro">Introduction to Web Development</a></li>
+          <li><a href="#web-browsers">Web Browsers and Search Engines</a></li>
+          <li>
+            <a href="#internet-tech"
+              >Overview of Internet and Web Technologies</a
+            >
+          </li>
+          <li><a href="#cms">Content Management System (CMS)</a></li>
+          <li><a href="#html-intro">HTML: The Language of the Web</a></li>
+          <li><a href="#html-tags">HTML Tags vs. Attributes</a></li>
+          <li><a href="#basic-html-tags">Basic Tags of HTML</a></li>
+          <li><a href="#text-formatting">Text Formatting in HTML</a></li>
+          <li><a href="#lists">Lists in HTML</a></li>
+          <li><a href="#links">Creating Links in HTML</a></li>
+          <li><a href="#tables">Tables in HTML</a></li>
+          <li><a href="#forms">Forms in HTML</a></li>
+          <li><a href="#html5">Introduction to HTML5</a></li>
+          <li><a href="#html5-graphics">HTML5 Graphics: Canvas and SVG</a></li>
+          <li><a href="#domain-hosting">Domain Name and Web Hosting</a></li>
+          <li><a href="#css-intro">Introduction to CSS</a></li>
+        </ul>
+      </div>
+
+      <div id="details">
+        <h1 id="web-dev-intro">Introduction to Web Development</h1>
+        <p>
+          <strong>Web development</strong> is the process of building and
+          maintaining websites. It involves front-end development (client-side),
+          back-end development (server-side), and database management. Front-end
+          development focuses on the user interface and user experience, while
+          back-end development handles server-side logic, databases, and
+          application functionality. Web development is a dynamic field that
+          requires knowledge of various programming languages, frameworks, and
+          tools.
+        </p>
+        <p>
+          Web developers use technologies like HTML, CSS, and JavaScript for
+          front-end development, and languages like Python, PHP, and Node.js for
+          back-end development. The rise of frameworks like React, Angular, and
+          Django has made web development more efficient and scalable.
+        </p>
+
+        <h1 id="web-browsers">Web Browsers and Search Engines</h1>
+        <p>
+          <strong>Web browsers</strong> are software applications used to access
+          and view websites. Popular web browsers include Google Chrome, Mozilla
+          Firefox, Microsoft Edge, and Safari. These browsers interpret HTML,
+          CSS, and JavaScript to render web pages.
+        </p>
+        <p>
+          <strong>Search engines</strong> like Google, Bing, and Yahoo are tools
+          used to find information on the web. They use algorithms to index and
+          rank web pages based on relevance to user queries. Search engine
+          optimization (SEO) is a key aspect of web development to ensure
+          websites rank higher in search results.
+        </p>
+
+        <h1 id="internet-tech">Overview of Internet and Web Technologies</h1>
+        <p>
+          The <strong>internet</strong> is a global network of interconnected
+          computers that communicate using standardized protocols. It enables
+          the sharing of information and resources across the world. The
+          <strong>World Wide Web (WWW)</strong> is a system of interlinked
+          hypertext documents accessed via the internet.
+        </p>
+        <p>Key web technologies include:</p>
+        <ul>
+          <li>
+            <strong>HTTP/HTTPS</strong>: Protocols for data transfer between web
+            servers and clients.
+          </li>
+          <li>
+            <strong>HTML/CSS/JavaScript</strong>: Core technologies for building
+            and styling web pages.
+          </li>
+          <li>
+            <strong>APIs</strong>: Enable communication between different
+            software applications.
+          </li>
+          <li>
+            <strong>Web Servers</strong>: Host and deliver web content to users.
+          </li>
+        </ul>
+
+        <h1 id="cms">Content Management System (CMS)</h1>
+        <p>
+          A <strong>Content Management System (CMS)</strong> is software that
+          allows users to create, manage, and modify content on a website
+          without needing technical expertise. CMS platforms like WordPress,
+          Joomla, and Drupal provide user-friendly interfaces for content
+          creation and management.
+        </p>
+        <p>
+          CMSs are widely used for blogs, e-commerce websites, and corporate
+          websites. They offer features like templates, plugins, and user
+          management, making it easier for non-developers to maintain websites.
+        </p>
+
+        <h1 id="html-intro">HTML: The Language of the Web</h1>
+        <p>
+          <strong>HTML</strong> (HyperText Markup Language) is the standard
+          language for creating web pages. It defines the structure and content
+          of a webpage using tags and attributes. HTML is the backbone of web
+          development and is supported by all web browsers.
+        </p>
+        <h3>Objectives of HTML</h3>
+        <ul>
+          <li>
+            Define the structure of a webpage using elements like headings,
+            paragraphs, and lists.
+          </li>
+          <li>Embed multimedia content such as images, videos, and audio.</li>
+          <li>Create hyperlinks for navigation between web pages.</li>
+        </ul>
+        <h3>Structure of HTML</h3>
+        <pre>
+            <code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Heading&lt;/h1&gt;
+    &lt;p&gt;Paragraph&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </code>
+        </pre>
+        <div class="output">
+          <h1>Heading</h1>
+          <p>Paragraph</p>
+        </div>
+
+        <h1 id="html-tags">HTML Tags vs. Attributes</h1>
+        <p>
+          <strong>Tags</strong> are used to define elements on a webpage. For
+          example, the <code>&lt;p&gt;</code> tag is used to create paragraphs,
+          and the <code>&lt;img&gt;</code> tag is used to embed images. Tags are
+          enclosed in angle brackets (<code>&lt; &gt;</code>).
+        </p>
+        <p>
+          <strong>Attributes</strong> provide additional information about
+          elements. For example, the <code>src</code> attribute in the
+          <code>&lt;img&gt;</code> tag specifies the image source, and the
+          <code>href</code> attribute in the <code>&lt;a&gt;</code> tag
+          specifies the link destination.
+        </p>
+
+        <h1 id="basic-html-tags">Basic Tags of HTML</h1>
+        <p>
+          HTML provides a variety of tags to structure and format content. Some
+          of the most commonly used tags include:
+        </p>
+        <ul>
+          <li>
+            <code>&lt;html&gt;</code>: The root element of an HTML document.
+          </li>
+          <li>
+            <code>&lt;head&gt;</code>: Contains metadata like the page title and
+            links to CSS files.
+          </li>
+          <li>
+            <code>&lt;title&gt;</code>: Sets the title of the webpage, which
+            appears in the browser tab.
+          </li>
+          <li>
+            <code>&lt;body&gt;</code>: Contains the visible content of the
+            webpage.
+          </li>
+          <li>
+            <code>&lt;h1&gt; to &lt;h6&gt;</code>: Headings of different levels,
+            with <code>&lt;h1&gt;</code> being the highest.
+          </li>
+          <li><code>&lt;p&gt;</code>: Defines a paragraph of text.</li>
+          <li><code>&lt;br&gt;</code>: Inserts a line break.</li>
+          <li>
+            <code>&lt;!-- --&gt;</code>: Used to add comments in HTML, which are
+            not displayed in the browser.
+          </li>
+        </ul>
+        <h3>Example</h3>
+        <pre>
+            <code>
+&lt;h1&gt;This is a Heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;br&gt;
+&lt;!-- This is a comment --&gt;
+            </code>
+        </pre>
+        <div class="output">
+          <h1>This is a Heading</h1>
+          <p>This is a paragraph.</p>
+          <br />
+          <!-- This is a comment -->
+        </div>
+
+        <h1 id="text-formatting">Text Formatting in HTML</h1>
+        <p>
+          HTML provides several tags for formatting text. These tags allow you
+          to emphasize text, create headings, and add other stylistic elements.
+          Some common text formatting tags include:
+        </p>
+        <ul>
+          <li><code>&lt;b&gt;</code>: Bold text.</li>
+          <li><code>&lt;i&gt;</code>: Italic text.</li>
+          <li><code>&lt;u&gt;</code>: Underlined text.</li>
+          <li><code>&lt;mark&gt;</code>: Highlighted text.</li>
+          <li><code>&lt;sup&gt;</code>: Superscript text.</li>
+          <li><code>&lt;sub&gt;</code>: Subscript text.</li>
+          <li>
+            <code>&lt;em&gt;</code>: Emphasized text (typically displayed in
+            italics).
+          </li>
+          <li>
+            <code>&lt;blockquote&gt;</code>: Defines a block of quoted text.
+          </li>
+          <li>
+            <code>&lt;pre&gt;</code>: Preformatted text that preserves spaces
+            and line breaks.
+          </li>
+        </ul>
+        <h3>Example</h3>
+        <pre>
+            <code>
+&lt;b&gt;Bold Text&lt;/b&gt;
+&lt;i&gt;Italic Text&lt;/i&gt;
+&lt;u&gt;Underlined Text&lt;/u&gt;
+&lt;mark&gt;Highlighted Text&lt;/mark&gt;
+&lt;sup&gt;Superscript&lt;/sup&gt;
+&lt;sub&gt;Subscript&lt;/sub&gt;
+&lt;em&gt;Emphasized Text&lt;/em&gt;
+&lt;blockquote&gt;This is a blockquote.&lt;/blockquote&gt;
+&lt;pre&gt;Preformatted Text&lt;/pre&gt;
+            </code>
+        </pre>
+        <div class="output">
+          <b>Bold Text</b><br />
+          <i>Italic Text</i><br />
+          <u>Underlined Text</u><br />
+          <mark>Highlighted Text</mark><br />
+          <sup>Superscript</sup><br />
+          <sub>Subscript</sub><br />
+          <em>Emphasized Text</em><br />
+          <blockquote>This is a blockquote.</blockquote>
+          <pre>Preformatted Text</pre>
+        </div>
+
+        <h1 id="lists">Lists in HTML</h1>
+        <p>
+          HTML supports two types of lists: <strong>ordered lists</strong> and
+          <strong>unordered lists</strong>. Ordered lists are numbered, while
+          unordered lists use bullet points. Lists are created using the
+          <code>&lt;ol&gt;</code> and <code>&lt;ul&gt;</code> tags,
+          respectively. Each item in the list is defined using the
+          <code>&lt;li&gt;</code> tag.
+        </p>
+        <h3>Example</h3>
+        <pre>
+            <code>
+&lt;ul&gt;
+&lt;li&gt;Item 1&lt;/li&gt;
+&lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;First Item&lt;/li&gt;
+&lt;li&gt;Second Item&lt;/li&gt;
+&lt;/ol&gt;
+            </code>
+        </pre>
+        <div class="output">
+          <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+          </ul>
+          <ol>
+            <li>First Item</li>
+            <li>Second Item</li>
+          </ol>
+        </div>
+
+        <h1 id="links">Creating Links in HTML</h1>
+        <p>
+          Links are created using the <code>&lt;a&gt;</code> tag. The
+          <code>href</code> attribute specifies the destination of the link.
+          Links can point to other HTML documents, specific sections within the
+          same document, or external resources.
+        </p>
+        <h3>Example</h3>
+        <pre>
+            <code>
+&lt;a href="https://www.google.com" target="_blank"&gt;Google&lt;/a&gt;
+            </code>
+        </pre>
+        <div class="output">
+          <a href="https://www.google.com" target="_blank">Google</a>
+        </div>
+
+        <h1 id="tables">Tables in HTML</h1>
+        <p>
+          Tables are used to display data in rows and columns. They are created
+          using the <code>&lt;table&gt;</code> tag. Each row is defined using
+          the <code>&lt;tr&gt;</code> tag, and each cell is defined using the
+          <code>&lt;td&gt;</code> tag. The <code>&lt;th&gt;</code> tag is used
+          for table headers.
+        </p>
+        <h3>Example</h3>
+        <pre>
+            <code>
+&lt;table&gt;
+&lt;tr&gt;
+    &lt;th&gt;Name&lt;/th&gt;
+    &lt;th&gt;Age&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;John&lt;/td&gt;
+    &lt;td&gt;25&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+            </code>
+        </pre>
+        <div class="output">
+          <table>
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+            </tr>
+            <tr>
+              <td>John</td>
+              <td>25</td>
+            </tr>
+          </table>
+        </div>
+
+        <h1 id="forms">Forms in HTML</h1>
+        <p>
+          Forms are used to collect user input. They are created using the
+          <code>&lt;form&gt;</code> tag. Common form elements include text
+          fields, radio buttons, checkboxes, and buttons. The
+          <code>&lt;input&gt;</code> tag is used to create various types of form
+          controls.
+        </p>
+        <h3>Example</h3>
+        <pre>
+            <code>
+&lt;form&gt;
+&lt;label for="name"&gt;Name:&lt;/label&gt;
+&lt;input type="text" id="name" name="name"&gt;
+&lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+            </code>
+        </pre>
+        <div class="output">
+          <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" />
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+
+        <h1 id="html5">Introduction to HTML5</h1>
+        <p>
+          <strong>HTML5</strong> is the latest version of HTML. It introduces
+          new elements like <code>&lt;audio&gt;</code>,
+          <code>&lt;video&gt;</code>, <code>&lt;canvas&gt;</code>, and
+          <code>&lt;svg&gt;</code>. HTML5 also provides better support for
+          multimedia and offline storage.
+        </p>
+        <h3>Example</h3>
+        <pre>
+            <code>
+&lt;iframe&gt; width="560" height="315" src="https://www.youtube.com/embed/_YbGWoUaZg0?si=4Frj_0-UtaxfTRcU"&lt;/iframe &gt;
+            </code>
+        </pre>
+        <div class="output">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/_YbGWoUaZg0?si=4Frj_0-UtaxfTRcU"
+          ></iframe>
+        </div>
+
+        <h1 id="html5-graphics">HTML5 Graphics: Canvas and SVG</h1>
+        <p>
+          <strong>Canvas</strong> is used for drawing graphics via JavaScript.
+          It provides a pixel-based drawing surface.
+          <strong>SVG</strong> (Scalable Vector Graphics) is used for
+          vector-based graphics. SVG graphics are resolution-independent and can
+          be scaled without losing quality.
+        </p>
+        <h3>Example</h3>
+        <pre>
+            <code>
+&lt;canvas id="myCanvas" width="200" height="100"&gt;&lt;/canvas&gt;
+&lt;svg width="100" height="100"&gt;
+&lt;circle cx="50" cy="50" r="40" fill="red" /&gt;
+&lt;/svg&gt;
+            </code>
+        </pre>
+        <div class="output">
+          <canvas id="myCanvas" width="200" height="100"></canvas>
+          <svg width="100" height="100">
+            <circle cx="50" cy="50" r="40" fill="red" />
+          </svg>
+        </div>
+
+        <h1 id="domain-hosting">Domain Name and Web Hosting</h1>
+        <p>
+          A <strong>domain name</strong> is the address of a website (e.g.,
+          www.example.com). It is registered through a domain registrar.
+          <strong>Web hosting</strong> is a service that stores your website
+          files and makes them accessible on the internet. Hosting providers
+          offer various plans, including shared hosting, VPS hosting, and
+          dedicated servers.
+        </p>
+
+        <h3>Types of CSS</h3>
+        <ul>
+          <li>
+            <strong>Inline CSS</strong>: Applied directly to HTML elements using
+            the <code>style</code> attribute.
+            <pre>
+            <code>
+&lt;p style="color: blue; font-size: 16px;"&gt;This is a paragraph with inline CSS.&lt;/p&gt;
+            </code>
+        </pre>
+            <div class="output">
+              <p style="color: blue; font-size: 16px">
+                This is a paragraph with inline CSS.
+              </p>
+            </div>
+          </li>
+          <li>
+            <strong>Embedded CSS</strong>: Defined within a
+            <code>&lt;style&gt;</code> tag in the
+            <code>&lt;head&gt;</code> section.
+            <pre>
+            <code>
+&lt;style&gt;
+    .p {
+        color: green;
+        font-size: 18px;
+    }
+&lt;/style&gt;
+&lt;p class="p"&gt;This is a paragraph with embedded CSS.&lt;/p&gt;
+            </code>
+        </pre>
+            <div class="output">
+              <style>
+                .p {
+                  color: green;
+                  font-size: 18px;
+                }
+              </style>
+              <p class="p">This is a paragraph with embedded CSS.</p>
+            </div>
+          </li>
+          <li>
+            <strong>External CSS</strong>: Stored in a separate file and linked
+            using the <code>&lt;link&gt;</code> tag.
+            <pre>
+            <code>
+&lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;p&gt;This is a paragraph with external CSS.&lt;/p&gt;
+            </code>
+        </pre>
+            <div class="output">
+              <p style="color: red; font-size: 20px">
+                This is a paragraph with external CSS.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
