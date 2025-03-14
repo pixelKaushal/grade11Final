@@ -101,3 +101,9 @@ code {
 .output th {
   color: #fff;
 }
+.example {
+  background: #f4f4f4;
+  padding: 10px;
+  border-left: 4px solid #34495e;
+  margin: 15px 0;
+}
