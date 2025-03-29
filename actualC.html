@@ -598,7 +598,11 @@ switch (day) {
         <h1 id="iteration">Iteration Control Statements</h1>
         <p>Loops are used to execute a block of code repeatedly.</p>
         <h3>While Loop</h3>
+		<P>he while loop loops through a block of code as long as a specified condition is true </p>
         <pre>
+		while (condition) {
+  // code block to be executed
+             }
             <code>
 int i = 1;
 while (i <= 5) {
@@ -610,7 +614,11 @@ while (i <= 5) {
         <div class="output">1 2 3 4 5</div>
 
         <h3>Do-While Loop</h3>
+		<p>The do/while loop is a variant of the while loop. This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true.</p>
         <pre>
+		do {
+  // code block to be executed
+           }while (condition);
             <code>
 int i = 1;
 do {
@@ -622,7 +630,12 @@ do {
         <div class="output">1 2 3 4 5</div>
 
         <h3>For Loop</h3>
+		<p>for" loop is a control flow statement used for iterative execution of a block of code, allowing you to repeat a set of instructions a specific number of times or until a condition is met.</p>
         <pre>
+		
+for (initialization; condition; update) {
+    // Code block to be executed repeatedly as long as the condition is true
+         }
             <code>
 for (int i = 1; i <= 5; i++) {
     printf("%d\n", i);
@@ -689,8 +702,8 @@ for (int i = 0; i < 2; i++) {
         <h3>Examples</h3>
 <pre>
             <code>
-        #include <string.h>
-          #include <stdio.h>
+        #include &lt;string.h&gt;
+          #include &lt;stdio.h&gt;
           
           char str1[20] = "Hello";
           char str2[20] = "World";
@@ -890,22 +903,163 @@ for (int i = 0; i < 2; i++) {
     </div>
 </div>
 
-<div class="question">
-    <h2>11. What is File Handling in C?</h2> <p>Grade 12</p>
-    <div class="answer">
-        <p>File handling allows reading and writing data to files.</p>
-        <p>Example:</p>
-        <pre>
-        FILE *fptr;
-        fptr = fopen("test.txt", "w");
-        fprintf(fptr, "Hello, C!");
-        fclose(fptr);
-        </pre>
-    </div>
-</div>
 
+<div class="question"> 
+	<h2> Write a program in C to check if the number is prime or not </h2>
+	<div class="answer"> 
+    <pre>
+#include &lt;stdio.h&gt;
+
+int main() {
+
+      int n;
+      int cnt = 0;
+      printf("Enter a positive number: ");
+      scanf("%d",&n);
+      if (n <= 1)
+          printf("%d is NOT prime\n", n);
+      else {
+  
+
+          for (int i = 1; i <= n; i++) {
+
+              // by n
+              if (n % i == 0)
+                  cnt++;
+          }
+  
+
+          if (cnt > 2)
+              printf("%d is NOT prime\n", n);
+
+          else
+              printf("%d is prime", n);
+      }
+  
+      return 0;
+  }
+  <IMG SRC="output2.png" width="50%">
+
+    </pre>
+  </div>
+</div>
+<div class="question">
+  <h2>Write a program to find factorial in C</h2>
+  <div class="answer">
+    <pre>
+    #include &lt;stdio.h&gt;
+      int main() {
+          int n, i fact;
+          fact = 1;
+          printf("Enter an integer: ");
+          scanf("%d", &n);
+          if (n < 0)
+              printf("Error! Factorial of a negative number doesn't exist.");
+          else {
+              for (i = 1; i <= n; ++i) {
+                  fact *= i;
+              }
+              printf("Factorial of %d = %d", n, fact);
+          }
+      
+          return 0;
+      }
+    </pre>
+    <IMG SRC="output1.png" width="50%">
+  </div>
+</div>
+<div class="question">
+  <h2>Write a program in c to find if the number is palindrome or not</h2>
+  <div class="answer">
+    <pre>
+      #include &lt;stdio.h&gt;
+        int main() {
+          int n, reversed = 0, remainder, original;
+            printf("Enter an integer: ");
+            scanf("%d", &n);
+            original = n;
+        
+           
+            while (n != 0) {
+                remainder = n % 10;
+                reversed = reversed * 10 + remainder;
+                n /= 10;
+            }
+        
+            
+            if (original == reversed)
+                printf("%d is a palindrome.", original);
+            else
+                printf("%d is not a palindrome.", original);
+        
+            return 0;
+        }
+    </pre>
+    <img src="output3.png" alt="">
+  </div>
+</div>
+<div class="question">
+  <h2>Write a program in c to check if number is perfect number or not.</h2>
+  <div class="answer">
+    <pre>
+      #include &lt;stdio.h&gt;
+      int main() {
+        int n, reversed = 0, remainder, original;
+          printf("Enter an integer: ");
+          scanf("%d", &n);
+          original = n; 
+          while (n != 0) {
+              remainder = n % 10;
+              reversed = reversed * 10 + remainder;
+              n /= 10;
+          }
+      
+          
+          if (original == reversed)
+              printf("%d is a palindrome.", original);
+          else
+              printf("%d is not a palindrome.", original);
+      
+          return 0;
+      }
+    </pre>
+    <img src="output5.png">
+  </div>
+</div>
+<div class="question">
+  <h2>Write code in C to find fibbonacci squence in C</h2>
+  <div class="answer">
+    <pre>
+      #include &lt;stdio.h&gt;
+      int main() {
+        int i, n;
+      
+        int t1 = 0, t2 = 1;
+      
+      
+        int nextTerm = t1 + t2;
+      
+        printf("Enter the number of terms: ");
+        scanf("%d", &n);
+      
+        printf("Fibonacci Series: %d, %d, ", t1, t2);
+      
+      
+        for (i = 3; i <= n; ++i) {
+          printf("%d, ", nextTerm);
+          t1 = t2;
+          t2 = nextTerm;
+          nextTerm = t1 + t2;
+        }
+      
+        return 0;
+      }
+    </pre>
+    <img src="output4.png">
+  </div>
+</div>
       </div>
     </div>
-    <script src="index.js"></script>
+    
   </body>
 </html>
